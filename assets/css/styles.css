@@ -1,0 +1,149 @@
+body {
+    background-color: aliceblue;
+    display:flex;
+    height: 100vh;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+}
+
+.navmenu {
+    background-color: aquamarine;
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    width: 15vw;
+    height: 100vh;
+
+}
+
+nav ul li, a {
+    text-decoration: none;
+    list-style: none;
+}
+
+.navmenu1 {
+    display: flex;
+    border: 1px solid black;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.navmenu2 {
+    display: flex;
+    border: 1px solid black;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.navmenu3 {
+    display: flex;
+    border: 1px solid black;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.navmenu4 {
+    display: flex;
+    border: 1px solid black;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.mainbody {
+    border: 1px solid black;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    overflow-x: hidden;
+}
+
+.biosection {
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+
+.bioh1 {
+    text-decoration: underline;
+    font-size: xxx-large;
+}
+
+th, td {
+    border-bottom:1px solid black;
+    text-align: center;
+    font-size: large;
+}
+
+@media (max-width: 700px) {
+
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+    .navmenu {
+        background-color: aquamarine;
+        border: 1px solid black;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        height: 7vh;
+        width: auto;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .navmenu1 {
+        display: flex;
+        border: 1px solid black;
+ 
+    }
+    
+    .navmenu2 {
+        display: flex;
+        border: 1px solid black;
+
+    }
+    
+    .navmenu3 {
+        display: flex;
+        border: 1px solid black;
+
+    }
+    
+    .navmenu4 {
+        display: flex;
+        border: 1px solid black;
+
+    }
+
+    .mainbody {
+        border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        overflow: unset;
+    }
+
+    .biosection {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: auto;
+        overflow: unset;
+    }
+    
+    .bioimg1 {
+    width: 100vw;
+}
+
+}
