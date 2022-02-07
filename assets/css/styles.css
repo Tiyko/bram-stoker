@@ -1,8 +1,8 @@
 body {
     background-color: aliceblue;
     display:flex;
-    height: 100vh;
-    width: 100vw;
+    min-height: 100vh;
+    min-width: 100vw;
     padding: 0;
     margin: 0;
 }
@@ -18,13 +18,14 @@ body {
     padding: 0;
     margin: 0;
     width: 15vw;
-    height: 100vh;
-
+    height: 100%;
+    position: fixed;
 }
 
 nav ul li, a {
     text-decoration: none;
     list-style: none;
+    display: flex;
 }
 
 .navmenu1 {
@@ -61,13 +62,12 @@ nav ul li, a {
     display: flex;
     flex-direction: column;
     width: 80%;
-    overflow-x: hidden;
+    margin-left: 15vw;
 }
 
 .biosection {
     display: flex;
     flex-direction: column;
-    overflow-x: hidden;
 }
 
 
@@ -82,11 +82,17 @@ th, td {
     font-size: large;
 }
 
+.bioimg1 {
+    width: 100%;
+}
+
 @media (max-width: 700px) {
 
     body {
         display: flex;
         flex-direction: column;
+        margin: 0;
+        padding: 0;
     }
     .navmenu {
         background-color: aquamarine;
@@ -96,8 +102,8 @@ th, td {
         flex-wrap: wrap;
         flex-direction: row;
         align-items: center;
-        height: 7vh;
-        width: auto;
+        height: 10vh;
+        width: 100%;
         padding: 0;
         margin: 0;
     }
@@ -130,20 +136,20 @@ th, td {
         border: 1px solid black;
         display: flex;
         flex-direction: column;
-        width: auto;
-        overflow: unset;
+        width: 100%;
+        margin: 0;
+        margin-top: 10vh;
     }
 
     .biosection {
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
-        width: auto;
-        overflow: unset;
+        width: 100%;
     }
     
     .bioimg1 {
-    width: 100vw;
-}
+        width: 100vw;
+    }
 
 }
