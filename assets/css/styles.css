@@ -7,6 +7,17 @@ body {
     margin: 0;
 }
 
+nav ul li a {
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    position: fixed;
+    top: 45vh;
+}
+
 .navmenu {
     background-color: aquamarine;
     border: 1px solid black;
@@ -19,41 +30,30 @@ body {
     margin: 0;
     width: 15vw;
     height: 100%;
-    position: fixed;
-}
-
-nav ul li, a {
-    text-decoration: none;
-    list-style: none;
-    display: flex;
+    
 }
 
 .navmenu1 {
     display: flex;
     border: 1px solid black;
-    margin-top: 10%;
-    margin-bottom: 10%;
 }
 
 .navmenu2 {
     display: flex;
     border: 1px solid black;
-    margin-top: 10%;
-    margin-bottom: 10%;
+    margin-top: 5%;
 }
 
 .navmenu3 {
     display: flex;
     border: 1px solid black;
     margin-top: 10%;
-    margin-bottom: 10%;
 }
 
 .navmenu4 {
     display: flex;
     border: 1px solid black;
-    margin-top: 10%;
-    margin-bottom: 10%;
+    margin-top: 15%;
 }
 
 .mainbody {
@@ -61,29 +61,33 @@ nav ul li, a {
     background-color: aqua;
     display: flex;
     flex-direction: column;
-    width: 80%;
-    margin-left: 15vw;
+    width: 70%;
+    padding-bottom: 4vh;
 }
 
 .biosection {
     display: flex;
     flex-direction: column;
-}
-
-
-.bioh1 {
-    text-decoration: underline;
-    font-size: xxx-large;
+    padding-bottom: 4vh;
+    width: 30%;
 }
 
 th, td {
     border-bottom:1px solid black;
     text-align: center;
-    font-size: large;
+    /* font-size: large; */
 }
 
 .bioimg1 {
     width: 100%;
+}
+
+footer {
+    height: 4vh;
+    min-width: 100vw;
+    position: fixed;
+    top: 96vh;
+    background-color: wheat;
 }
 
 @media (max-width: 700px) {
@@ -94,6 +98,12 @@ th, td {
         margin: 0;
         padding: 0;
     }
+
+    nav ul li {
+        position: unset;
+        top: unset;
+    }
+
     .navmenu {
         background-color: aquamarine;
         border: 1px solid black;
@@ -106,8 +116,9 @@ th, td {
         width: 100%;
         padding: 0;
         margin: 0;
+        position: fixed;
     }
-    
+
     .navmenu1 {
         display: flex;
         border: 1px solid black;
@@ -117,19 +128,19 @@ th, td {
     .navmenu2 {
         display: flex;
         border: 1px solid black;
-
+        margin: 0;
     }
     
     .navmenu3 {
         display: flex;
         border: 1px solid black;
-
+        margin: 0;
     }
     
     .navmenu4 {
         display: flex;
         border: 1px solid black;
-
+        margin: 0;
     }
 
     .mainbody {
@@ -137,7 +148,6 @@ th, td {
         display: flex;
         flex-direction: column;
         width: 100%;
-        margin: 0;
         margin-top: 10vh;
     }
 
@@ -150,6 +160,12 @@ th, td {
     
     .bioimg1 {
         width: 100vw;
+    }
+
+    .footer {
+        height: 5vh;
+        width: 100vw;
+        position: unset;
     }
 
 }
