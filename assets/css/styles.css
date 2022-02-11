@@ -1,7 +1,5 @@
 body {
     background-color: aliceblue;
-    min-height: 100vh;
-    min-width: 100vw;
     padding: 0;
     margin: 0;
     overflow-x: hidden;
@@ -29,8 +27,8 @@ nav, li, a {
 }
 
 .colscontainer {
-    width: 100%;
-    height: 95%;
+    min-height: 100vh;
+    min-width: 100vw;
     display: flex;
     flex-direction: row;
 }
@@ -62,7 +60,7 @@ nav, li, a {
 .mainsection {
     border: 1px solid black;
     background-color: aqua;
-    flex: 4;
+    flex: 5;
 }
 
 .sidesection {
@@ -76,13 +74,22 @@ th, td {
     text-align: center;
 }
 
+table {
+    width: 100%;
+    background-color: aliceblue;
+}
+
+.mainsecimg {
+    display: grid;
+    justify-items: center;
+}
+
 .sideimg {
     width: 100%;
 }
 
 .footer {
     background-color: wheat;
-    height: 5%;
 }
 
 @media (max-width: 700px) {
