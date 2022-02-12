@@ -5,9 +5,24 @@ body {
     overflow-x: hidden;
 }
 
+h1, h2, h3 {
+    border-bottom: 0.5px solid black;
+    font-size: 2rem;
+    padding-left: 10%;
+}
+
+p {
+    font-size: 1rem;
+}
+
+
 nav, li, a {
     text-decoration: none;
     list-style: none;
+    font-size: 1.2rem;
+    font-family: cursive;
+    color: black;
+
 }
 
 .fixednav {
@@ -18,7 +33,9 @@ nav, li, a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 20vh;
+    align-items: center;
+    height: 30vh;
+    width: 12.2%;
 }
 
 .maincontainer {
@@ -33,70 +50,106 @@ nav, li, a {
     flex-direction: row;
 }
 .navmenu {
-    background-color: aquamarine;
-    border: 1px solid black;
+    background-color: crimson;
     display: flex;
     flex: 1;
     flex-direction: column;
     align-items: center;
-}
-
-.navmenu1 {
-    border: 1px solid black;
-}
-
-.navmenu2 {
-    border: 1px solid black;
-}
-
-.navmenu3 {
-    border: 1px solid black;
-}
-
-.navmenu4 {
-    border: 1px solid black;
+    border-right: 15px solid aliceblue;
 }
 
 .mainsection {
-    border: 1px solid black;
-    background-color: aqua;
+    background-color: crimson;
     flex: 5;
 }
 
-.sidesection {
-    border: 1px solid black;
-    background-color: gray;
-    flex: 2;
-}
-
-th, td {
-    border-bottom:1px solid black;
-    text-align: center;
-}
-
-table {
-    width: 100%;
+.article {
+    
     background-color: aliceblue;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 3%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+}
+
+.festival {
+    background-image: url('/assets/images/bramstoker_festival1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 100% 100%;
+    min-height: 100vh;
+    color: aliceblue;
+}
+
+.articledivright {
+    display: flex;
+    align-items: center;
+}
+
+.articleppright {
+    padding-right: 3%;
+    flex: 1;
+}
+
+.articleimgright {
+    flex: 1;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.divmainsecimg {
+    display: flex;
+    justify-content: center;
 }
 
 .mainsecimg {
     display: grid;
     justify-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.sideimg {
+.sidesection {
+    background-color: aliceblue;
+    flex: 2;
+    padding-right: 3%;
+}
+
+.sidecards {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.sidecards p {
+    display: flex;
+    justify-content: center;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+th {
+    text-align: left;
+}
+
+table {
+    width: 100%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.sideimg, .mainimg {
     width: 100%;
 }
 
 .footer {
-    background-color: wheat;
+    background-color: aquamarine;
 }
 
 @media (max-width: 700px) {
 
     .navmenu {
-        background-color: aquamarine;
-        border: 1px solid black;
         justify-content: center;
         height: 10vh;
         width: 100%;
@@ -115,31 +168,38 @@ table {
         width: 80vw;
     }
 
-    .navmenu1 {
-        border: 1px solid black;
- 
-    }
-    
-    .navmenu2 {
-        border: 1px solid black;
-    }
-    
-    .navmenu3 {
-        border: 1px solid black;
-    }
-    
-    .navmenu4 {
-        border: 1px solid black;
-    }
-
     .colscontainer {
         flex-wrap: wrap;
         flex-direction: column;
     }
 
     .mainsection {
-        border: 1px solid black;
         margin-top: 10vh;
+    }
+
+    .article {
+        width: 100vw;
+        margin: unset;
+        padding: unset;
+    }
+
+    .articleppright {
+        padding: unset;
+    }
+
+    .articledivright {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .articleimgright {
+        display: grid;
+        justify-items: center;
+
+    }
+
+    .festival {
+        width: 100vw;
     }
     
     .footer {
