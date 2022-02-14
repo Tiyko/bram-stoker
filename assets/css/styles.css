@@ -1,13 +1,19 @@
+
+/* Global settings */
 body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: aliceblue;
     padding: 0;
     margin: 0;
     overflow-x: hidden;
 }
 
+h1 {
+    font-size: 2rem;
+}
+
 h1, h2, h3 {
     border-bottom: 0.5px solid black;
-    font-size: 2rem;
     padding-left: 10%;
 }
 
@@ -15,41 +21,20 @@ p {
     font-size: 1rem;
 }
 
-
-nav, li, a {
-    text-decoration: none;
-    list-style: none;
-    font-size: 1.2rem;
-    font-family: cursive;
-    color: black;
-
-}
-
-.fixednav {
-    position: fixed;
-    top: 25vh;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    height: 30vh;
-    width: 10%;
-}
-
-.maincontainer {
+/* Columns settings */
+.main-container {
     display: flex;
     flex-direction: column;
 }
 
-.colscontainer {
+.cols-container {
     min-height: 100vh;
     min-width: 100vw;
     display: flex;
     flex-direction: row;
 }
-.navmenu {
+
+.navmenu-container {
     background-color: crimson;
     display: flex;
     flex: 1;
@@ -58,11 +43,61 @@ nav, li, a {
     border-right: 15px solid aliceblue;
 }
 
-.mainsection {
+.mainsection-container {
     background-color: crimson;
     flex: 5;
 }
 
+.sidesection-container {
+    border-left: 15px solid aliceblue;
+    background-color: aliceblue;
+    flex: 2;
+    padding-right: 2%;
+}
+
+/* Navigation bar settings */
+nav, li, a {
+    text-decoration: none;
+    list-style: none;
+    font-size: 1rem;
+    color: aliceblue;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 95%;
+    display: flex;
+}
+
+.fixednav {
+    position: fixed;
+    top: 15vh;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 40vh;
+    width: 12%;
+}
+
+a:hover {
+    cursor: pointer;
+    color: aliceblue;
+}
+
+.navbutton {
+    border-bottom: 0.1rem solid black;
+}
+
+.active, .navbutton:hover {
+    border-bottom: 0.4rem solid aliceblue;
+    border-top: 0.4rem solid aliceblue;
+    border-radius: 15%;
+    padding: 10%;
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0), 0 6px 20px 0 rgb(0, 0, 0);
+}
+
+/* Main section settings */
 .article {
     background-color: aliceblue;
     margin-left: 10%;
@@ -74,7 +109,7 @@ nav, li, a {
 }
 
 .festival {
-    background-image: url('/assets/images/bramstoker_festival1.jpg');
+    background-image: url('../images/bramstoker_festival1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-size: 100% 100%;
@@ -88,8 +123,7 @@ nav, li, a {
 }
 
 .div2-article-img-side {
-    display: grid;
-    justify-items: center;
+    text-align: center;
     border-radius: 5%;
     flex: 1;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -108,8 +142,7 @@ nav, li, a {
 
 .div2-article-img-center {
     border-radius: 3%;
-    display: grid;
-    justify-items: center;
+    text-align: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -118,14 +151,13 @@ nav, li, a {
     width: 100%;
 }
 
-
-.sidesection {
-    border-left: 15px solid aliceblue;
-    background-color: aliceblue;
-    flex: 2;
-    padding-right: 2%;
+.sections {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 10%;
+    margin-bottom: 5%;
 }
 
+/* Side section settings */
 .sidecards {
     display: flex;
     flex-direction: column;
@@ -156,19 +188,42 @@ iframe {
     border-radius: 3%;
 }
 
+/* Footer settings */
 .footer {
     background-color: aquamarine;
 }
 
+
+/* Mobile phones settings */
 @media (max-width: 700px) {
 
-    .navmenu {
+    h1 {
+        font-size: 1rem;
+    }
+
+    /* Columns mobile settings */
+    .cols-container {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .navmenu-container {
         justify-content: center;
         height: 10vh;
         width: 100%;
         position: fixed;
     }
 
+    .mainsection-container {
+        margin-top: 10vh;
+    }
+
+    .sidesection-container {
+        padding: unset;
+        border: unset;
+    }
+
+    /* Navbar mobile settings */
     .fixednav {
         top: unset;
         padding: 0;
@@ -181,15 +236,12 @@ iframe {
         width: 80vw;
     }
 
-    .colscontainer {
-        flex-wrap: wrap;
-        flex-direction: column;
+    .nav, li, a {
+        font-size: 0.75rem;
+        width: unset;
     }
 
-    .mainsection {
-        margin-top: 10vh;
-    }
-
+    /* Main section mobile settings */
     .article {
         width: 100vw;
         margin: unset;
@@ -218,9 +270,8 @@ iframe {
         width: 100vw;
     }
 
-    .sidesection {
-        padding: unset;
-        border: unset;
+    .sections {
+        padding: 1%;
     }
     
     .footer {
@@ -229,8 +280,23 @@ iframe {
 
 }
 
-@media screen and (max-width: 1350px) and (min-width: 701px) {
+/* Tablet settings */
+@media screen and (max-width: 1300px) and (min-width: 701px) {
     
+    h1 {
+        font-size: 1rem;
+    }
+
+    nav, li, a {
+        font-size: 0.6rem;
+    }
+
+    .active, .navbutton:hover {
+        border-bottom: 0.2rem solid aliceblue;
+        border-top: 0.2rem solid aliceblue;
+        padding: 2%;
+    }
+
     .div1-article-img-side {
         display: flex;
         align-items: center;
