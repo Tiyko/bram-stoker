@@ -2,10 +2,11 @@
 /* Global settings */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: aliceblue;
+    background-color: rgb(75, 0, 15);
     padding: 0;
     margin: 0;
     overflow-x: hidden;
+
 }
 
 h1 {
@@ -13,13 +14,46 @@ h1 {
 }
 
 h1, h2, h3 {
-    border-bottom: 0.5px solid black;
+    border-bottom: 0.5px solid aliceblue;
     padding-left: 10%;
+    color: aliceblue;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 p {
     font-size: 1rem;
+    color: aliceblue;
+    margin-bottom: 10%;
+    margin-top: 10%;
+    
 }
+
+th, tr {
+    text-align: left;
+    font-size: 0.8rem;
+    color: aliceblue;
+}
+
+table {
+    width: 100%;
+    padding-bottom: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+    border-spacing: 0;
+}
+
+
+/* Background video */
+#background-video {
+    object-fit: fill;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
 
 /* Columns settings */
 .main-container {
@@ -35,23 +69,22 @@ p {
 }
 
 .navmenu-container {
-    background-color: crimson;
+    background-color: transparent;
     display: flex;
     flex: 1;
     flex-direction: column;
     align-items: center;
-    border-right: 15px solid aliceblue;
 }
 
 .mainsection-container {
-    background-color: crimson;
-    flex: 5;
+    background-color: transparent;
+    flex: 3;
+    margin-top: 47vh;
 }
 
 .sidesection-container {
-    border-left: 15px solid aliceblue;
-    background-color: aliceblue;
-    flex: 2;
+    background-color: transparent;
+    flex: 1;
     padding-right: 2%;
 }
 
@@ -59,7 +92,7 @@ p {
 nav, li, a {
     text-decoration: none;
     list-style: none;
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: aliceblue;
     text-transform: uppercase;
     font-weight: bold;
@@ -86,7 +119,7 @@ a:hover {
 }
 
 .navbutton {
-    border-bottom: 0.1rem solid black;
+    border-bottom: 0.12rem solid aliceblue;
 }
 
 .active, .navbutton:hover {
@@ -94,28 +127,19 @@ a:hover {
     border-top: 0.4rem solid aliceblue;
     border-radius: 15%;
     padding: 10%;
-    box-shadow: 0 4px 8px 0 rgb(0, 0, 0), 0 6px 20px 0 rgb(0, 0, 0);
+    box-shadow: 1px 4px 8px 1px rgba(255, 255, 255, 0.541), 2px 5px 11px 2px rgba(205, 233, 47, 0.61);
 }
 
 /* Main section settings */
 .article {
-    background-color: aliceblue;
+    background-color: transparent;
     margin-left: 10%;
     margin-right: 10%;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-top: 3%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 10%;
 }
 
-.festival {
-    background-image: url('../images/bramstoker_festival1.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-size: 100% 100%;
-    min-height: 100vh;
-    color: aliceblue;
-}
 
 .div1-article-img-side {
     display: flex;
@@ -126,42 +150,47 @@ a:hover {
     text-align: center;
     border-radius: 5%;
     flex: 1;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 4px 8px 8px 4px rgba(228, 228, 228, 0.2), 4px 6px 20px 4px rgba(255, 253, 253, 0.19);
 }
 
 .article-p-side {
-    padding-right: 2%;
-    padding-left: 2%;
-    flex: 2;
+    padding-right: 5%;
+    padding-left: 5%;
+    flex: 1;
 }
 
 .div1-article-img-center {
     display: flex;
     justify-content: center;
+    margin-top: 10%;
 }
 
 .div2-article-img-center {
     border-radius: 3%;
     text-align: center;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 4px 8px 8px 4px rgba(228, 228, 228, 0.2), 4px 6px 20px 4px rgba(255, 253, 253, 0.19);
 }
 
 .sideimg, .mainimg {
     border-radius: 3%;
     width: 100%;
+    margin-bottom: 5%;
 }
 
 .sections {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 4px 8px 8px 4px rgba(0, 0, 0, 0.2), 4px 6px 20px 4px rgba(0, 0, 0, 0.19);
     padding: 10%;
+    margin-top: 5%;
     margin-bottom: 5%;
+    background-color: rgba(0, 0, 0, 0.900);
 }
 
 /* Side section settings */
 .sidecards {
     display: flex;
     flex-direction: column;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 4px 8px 8px 4px rgba(228, 228, 228, 0.2), 4px 6px 20px 4px rgba(255, 253, 253, 0.19);
+    background-color: rgba(0, 0, 0, 0.500);
 }
 
 .sidecards p {
@@ -171,22 +200,14 @@ a:hover {
     padding-right: 5%;
 }
 
-th {
-    text-align: left;
-}
-
-table {
-    width: 100%;
-    padding-bottom: 5%;
-    padding-left: 5%;
-    padding-right: 5%;
-}
-
 iframe {
     width: 100%;
     height: 400px;
     border-radius: 3%;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
+
 
 /* Footer settings */
 .footer {
@@ -195,10 +216,20 @@ iframe {
 
 
 /* Mobile phones settings */
-@media (max-width: 700px) {
+@media screen and (min-width: 200px) and (max-width: 767px) {
 
     h1 {
         font-size: 1rem;
+    }
+    
+    #background-video {
+        object-fit: fill;
+        position: fixed;
+        width: unset;
+        height: unset;
+        top: 0;
+        left: 0;
+        z-index: -1;
     }
 
     /* Columns mobile settings */
@@ -209,13 +240,14 @@ iframe {
 
     .navmenu-container {
         justify-content: center;
-        height: 10vh;
+        height: 7vh;
         width: 100%;
         position: fixed;
+        background-color: rgb(75, 0, 15);
     }
 
     .mainsection-container {
-        margin-top: 10vh;
+        margin-top: 50vh;
     }
 
     .sidesection-container {
@@ -237,8 +269,24 @@ iframe {
     }
 
     .nav, li, a {
-        font-size: 0.75rem;
-        width: unset;
+        font-size: 0.55rem;
+        width: 4rem;
+    }
+
+    .active, .navbutton:hover {
+        border-bottom: unset;
+        border-top: unset;
+        padding: 0;
+        background-color: black;
+        height: 7vh;
+        display: flex;
+        align-items: center;
+        box-shadow: none;
+        display: flex;
+        justify-content: center;
+        margin-left: 3%;
+        margin-right: 3%;
+        border-radius: unset;
     }
 
     /* Main section mobile settings */
@@ -266,14 +314,15 @@ iframe {
         padding-right: 2%;
     }
 
-    .festival {
-        width: 100vw;
-    }
-
     .sections {
         padding: 1%;
+        padding-top: 7%;
     }
     
+    .sidecards {
+        background-color: rgba(0, 0, 0, 0.900);
+    }
+
     .footer {
         height: 5vh;
     }
@@ -281,20 +330,24 @@ iframe {
 }
 
 /* Tablet settings */
-@media screen and (max-width: 1300px) and (min-width: 701px) {
+@media screen and (max-width: 1366px) and (min-width: 768px) {
     
-    h1 {
-        font-size: 1rem;
+    h1, h2, h3 {
+        font-size: 100%;
     }
 
     nav, li, a {
-        font-size: 0.6rem;
+        font-size: 95%;
     }
 
     .active, .navbutton:hover {
         border-bottom: 0.2rem solid aliceblue;
         border-top: 0.2rem solid aliceblue;
-        padding: 2%;
+        padding: 5%;
+    }
+
+    .mainsection-container {
+        margin-top: 60vh;
     }
 
     .div1-article-img-side {
@@ -302,4 +355,37 @@ iframe {
         align-items: center;
         flex-direction: column;
     }
+
+    .article {
+            padding: unset;
+            margin: unset;
+            margin-right: 5%;
+    }
+
+    .navmenu-container {
+        flex: 1;
+    }
+    
+    .mainsection-container {
+        flex: 3;
+    }
+    
+    .sidesection-container {
+        flex: 2;
+    }
+
+
+    
+
 }
+
+@media (max-width: 1700px) {
+
+    .div1-article-img-side {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+}
+
