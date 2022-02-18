@@ -1,356 +1,431 @@
 
 /* Global settings */
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: rgb(75, 0, 15);
-    padding: 0;
-    margin: 0;
-    overflow-x: hidden;
-}
 
-h1 {
-    font-size: 2rem;
-}
-
-h1, h2, h3 {
-    border-bottom: 0.5px solid aliceblue;
-    padding: 0 0 0 10%;
-    color: aliceblue;
-    margin: 5% 0 5% 0;
-}
-
-p {
-    font-size: 1rem;
-    color: aliceblue;
-    margin: 10% 0 10% 0;
-}
-
-th, tr {
-    text-align: left;
-    font-size: 0.8rem;
-    color: aliceblue;
-}
-
-table {
-    width: 100%;
-    padding: 10% 1% 10% 2%;
-    border-spacing: 0;
-}
-
-
-/* Background video */
-.background-video {
-    object-fit: fill;
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -1;
-  }
-
-/* Columns settings */
-.main-container {
-    display: flex;
-    flex-direction: column;
-}
-
-.cols-container {
-    min-height: 100vh;
-    min-width: 100vw;
-    display: flex;
-    flex-direction: row;
-}
-
-.navmenu-container {
-    background-color: transparent;
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    align-items: center;
-}
-
-.mainsection-container {
-    background-color: transparent;
-    flex: 3;
-    margin: 47vh 0 0 0;
-}
-
-.sidesection-container {
-    background-color: transparent;
-    flex: 1;
-    padding: 0 2% 0 0;
-}
-
-/* Navigation bar settings */
-nav, li, a {
-    text-decoration: none;
-    list-style: none;
-    font-size: 1.2rem;
-    color: aliceblue;
-    text-transform: uppercase;
-    font-weight: bold;
-    width: 95%;
-    display: flex;
-}
-
-.fixednav {
-    position: fixed;
-    top: 15vh;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 40vh;
-    width: 12%;
-}
-
-a:hover {
-    cursor: pointer;
-    color: aliceblue;
-}
-
-.navbutton {
-    border-bottom: 0.12rem solid aliceblue;
-}
-
-.active, .navbutton:hover {
-    border-bottom: 0.4rem solid aliceblue;
-    border-top: 0.4rem solid aliceblue;
-    border-radius: 15%;
-    padding: 10%;
-    box-shadow: 1px 4px 8px 1px rgba(255, 255, 255, 0.541), 2px 5px 11px 2px rgba(205, 233, 47, 0.61);
-}
-
-/* Main section settings */
-.article {
-    background-color: transparent;
-    margin: 0 10% 0 10%;
-    padding: 10% 10% 0 10%;
-}
-
-
-.div1-article-img-side {
-    display: flex;
-    align-items: center;
-}
-
-.div2-article-img-side {
-    text-align: center;
-    border-radius: 5%;
-    flex: 1;
-    box-shadow: 4px 8px 8px 4px rgba(228, 228, 228, 0.2), 4px 6px 20px 4px rgba(255, 253, 253, 0.19);
-}
-
-.article-p-side {
-    padding: 0 5% 0 5%;
-    flex: 1;
-}
-
-.div1-article-img-center {
-    display: flex;
-    justify-content: center;
-    margin: 10% 0 0 0;
-}
-
-.div2-article-img-center {
-    border-radius: 3%;
-    text-align: center;
-    box-shadow: 4px 8px 8px 4px rgba(228, 228, 228, 0.2), 4px 6px 20px 4px rgba(255, 253, 253, 0.19);
-}
-
-.sideimg, .mainimg {
-    border-radius: 3%;
-    width: 100%;
-    margin: 0 0 5% 0;
-}
-
-.sections {
-    box-shadow: 4px 8px 8px 4px rgba(0, 0, 0, 0.2), 4px 6px 20px 4px rgba(0, 0, 0, 0.19);
-    padding: 10%;
-    margin: 5% 0 5% 0;
-    background-color: rgba(0, 0, 0, 0.900);
-}
-
-/* Side section settings */
-.sidecards {
-    display: flex;
-    flex-direction: column;
-    box-shadow: 4px 8px 8px 4px rgba(228, 228, 228, 0.2), 4px 6px 20px 4px rgba(255, 253, 253, 0.19);
-    background-color: rgba(0, 0, 0, 0.500);
-}
-
-.sidecards p {
-    display: flex;
-    justify-content: center;
-    padding: 0 5% 0 5%;
-}
-
-iframe {
-    width: 100%;
-    height: 400px;
-    border-radius: 3%;
-    margin: 5% 0 5% 0;
-}
-
-
-/* Footer settings */
-.footer {
-    background-color: aquamarine;
-}
-
-
-/* Mobile phones settings */
-@media (max-width: 767px) {
-
-    h1 {
-        font-size: 1rem;
-    }
-    
-    .background-video {
-        width: unset;
-        height: unset;
-    }
-
-    /* Columns mobile settings */
-    .cols-container {
-        flex-wrap: wrap;
-        flex-direction: column;
-    }
-
-    .navmenu-container {
-        justify-content: center;
-        height: 7vh;
-        width: 100%;
-        position: fixed;
-        background-color: rgb(75, 0, 15);
-    }
-
-    .mainsection-container {
-        margin: 50vh 0 0 0;
-    }
-
-    .sidesection-container {
-        padding: 0;
-        border: 0;
-    }
-
-    /* Navbar mobile settings */
-    .fixednav {
-        top: unset;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: space-between;
-        height: unset;
-        width: 80vw;
-    }
-
-    .nav, li, a {
-        font-size: 0.55rem;
-        width: 4rem;
-    }
-
-    .active, .navbutton:hover {
-        border: 0;
-        padding: 0;
-        background-color: black;
-        height: 7vh;
-        display: flex;
-        align-items: center;
-        box-shadow: none;
-        justify-content: center;
-        margin: 0 3% 0 3%;
-        border-radius: 0;
-    }
-
-    /* Main section mobile settings */
-    .article {
-        width: 100vw;
+    * {
         margin: 0;
         padding: 0;
     }
 
-    .article p {
-        padding: 0 3% 0 3%;
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: rgb(75, 0, 15);
+        overflow-x: hidden;
     }
 
-    .article-p-side {
-        padding: 0;
+    h1 {
+        font-size: 1.8rem;
     }
 
-    .div1-article-img-side {
-        flex-direction: column;
-    }
-
-    .div2-article-img-side {
-        padding: 0 2% 0 2%;
-    }
-
-    .sections {
-        padding: 7% 1% 1% 1%;
-    }
-    
-    .sidecards {
-        background-color: rgba(0, 0, 0, 0.900);
-    }
-
-    .footer {
-        height: 5vh;
-    }
-}
-
-/* Tablet settings */
-@media screen and (max-width: 1366px) and (min-width: 768px) {
-    
     h1, h2, h3 {
-        font-size: 100%;
+        border-bottom: 0.5px solid aliceblue;
+        padding: 8% 0 0 10%;
+        color: aliceblue;
+        margin: 0% 0 10% 0;
     }
 
-    nav, li, a {
-        font-size: 95%;
+    p {
+        font-size: 1rem;
+        color: aliceblue;
+        margin: 5% 0 5% 0;
     }
 
-    .active, .navbutton:hover {
-        border-bottom: 0.2rem solid aliceblue;
-        border-top: 0.2rem solid aliceblue;
-        padding: 5%;
+    th, tr {
+        text-align: left;
+        font-size: 0.8rem;
+        color: aliceblue;
     }
 
-    .mainsection-container {
-        margin: 60vh 0 0 0;
+    table {
+        width: 100%;
+        padding: 0 1% 10% 2%;
+        border-spacing: 0;
     }
 
-    .div1-article-img-side {
+
+
+/* Background images */
+
+    .bio-background-img {
+        background: url("../images/Bram-Stoker-and-the-Wilde-Family-wide.jpeg") center center / cover fixed no-repeat;
+    }
+
+    .career-background-img {
+        background: url("../images/stoker-front-pic-wide.jpg") center center / cover fixed no-repeat;
+    }
+
+    .festival-background-img {
+        background: url("../images/festival-background.jpg") center center / cover fixed no-repeat;
+    }
+
+    .about-background-img {
+        background: url("../images/festival-banner.jpg") center center / cover fixed no-repeat;
+    }
+
+/* Columns settings */
+
+    .main-container {
         display: flex;
-        align-items: center;
         flex-direction: column;
     }
 
-    .article {
-            padding: 0;
-            margin: 0 5% 0 0;
-
+    .cols-container {
+        min-height: 100vh;
+        min-width: 100vw;
+        display: flex;
+        flex-direction: row;
     }
 
     .navmenu-container {
+        background-color: transparent;
         flex: 1;
+        flex-direction: column;
+        align-items: center;
     }
-    
-    .mainsection-container {
-        flex: 3;
-    }
-    
-    .sidesection-container {
-        flex: 2;
-    }
-}
 
-@media (max-width: 1700px) {
+    .mainsection-container {
+        background-color: transparent;
+        flex: 3;
+        margin: 70vh 0 0 0;
+    }
+
+    .sidesection-container {
+        background-color: transparent;
+        flex: 1;
+        padding: 0 2% 0 0;
+        margin: 69vh 0 0 0;
+    }
+
+
+
+/* Navigation bar settings */
+
+    nav, li, a {
+        text-decoration: none;
+        list-style: none;
+        font-size: 1rem;
+        color: aliceblue;
+        text-transform: uppercase;
+        font-weight: bold;
+        width: 85%;
+        display: flex;
+    }
+
+    .fixednav {
+        position: fixed;
+        top: 15vh;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 40vh;
+        width: 12%;
+    }
+
+    a:hover {
+        cursor: pointer;
+        color: aliceblue;
+    }
+
+    .navbutton {
+        border-bottom: 0.12rem solid aliceblue;
+        
+    }
+
+    /* Makes navigation button hover when active */
+    .active, .navbutton:hover {
+        border-bottom: 0.4rem solid aliceblue;
+        border-top: 0.4rem solid aliceblue;
+        border-radius: 15%;
+        padding: 7%;
+        box-shadow: 1px 4px 8px 1px rgba(255, 255, 255, 0.541), 2px 5px 11px 2px rgba(205, 233, 47, 0.61);
+        animation: active 3s;
+        justify-content: space-evenly;
+    }
+
+    /* Makes animation when navigation button is active */
+    @keyframes active {
+        0% {
+        transform: scale(1, 1);
+        }
+        50% {
+        transform: scale(1.1, 1.1);
+        }
+        100% {
+        transform: scale(1, 1);
+        }
+    }
+
+
+
+/* Main section settings */
+
+    .article {
+        background-color: transparent;
+        margin: 0 10% 0 10%;
+        padding: 0 10% 0 10%;
+    }
+
 
     .div1-article-img-side {
         display: flex;
         align-items: center;
-        flex-direction: column;
     }
-}
+
+    .div2-article-img-side {
+        text-align: center;
+        border-radius: 5%;
+        flex: 1;
+        box-shadow: 4px 8px 8px 4px rgba(228, 228, 228, 0.2), 4px 6px 20px 4px rgba(255, 253, 253, 0.19);
+
+    }
+
+    .article-p-side {
+        padding: 0 3% 0 3%;
+        flex: 1;
+    }
+
+    .div1-article-img-center {
+        display: flex;
+        justify-content: center;
+        margin: 10% 0 0 0;
+    }
+
+    .div2-article-img-center {
+        border-radius: 3%;
+        text-align: center;
+        box-shadow: 4px 8px 8px 4px rgba(228, 228, 228, 0.2), 4px 6px 20px 4px rgba(255, 253, 253, 0.19);
+    }
+
+    .sideimg, .mainimg {
+        border-radius: 3%;
+        width: 100%;
+    }
+
+    .sections {
+        box-shadow: 4px 8px 8px 4px rgba(0, 0, 0, 0.2), 4px 6px 20px 4px rgba(0, 0, 0, 0.19);
+        padding: 0 7% 7% 7%;
+        margin: 5% 0 5% 0;
+        background-color: rgba(0, 0, 0, 0.900);
+    }
+
+
+
+
+/* Side section settings */
+
+    .sidecards {
+        display: flex;
+        flex-direction: column;
+        box-shadow: 4px 8px 8px 4px rgba(228, 228, 228, 0.2), 4px 6px 20px 4px rgba(255, 253, 253, 0.19);
+        background-color: rgba(0, 0, 0, 0.500);
+    }
+
+    .sidecards p {
+        display: flex;
+        justify-content: center;
+        padding: 0 5% 0 5%;
+    }
+
+    iframe {
+        width: 100%;
+        height: 400px;
+        border-radius: 3%;
+        margin: 5% 0 5% 0;
+    }
+
+
+
+/* Footer settings */
+
+    .footer {
+        background-color: aquamarine;
+    }
+
+
+
+/* Mobile phones settings */
+
+    @media (max-width: 767px) {
+
+            /* Global mobile phones adjustments */
+
+            h1 {
+                font-size: 1rem;
+            }
+            
+            .background-video {
+                width: unset;
+                height: unset;
+            }
+
+
+
+        /* Background images for phones */
+
+            .bio-background-img {
+                background: url("../images/Bram-Stoker-and-the-Wilde-Family-phone.jpeg") center center / cover fixed no-repeat;
+            }
+
+            .about-background-img {
+                background: url("../images/bramstoker_festival1.jpg") center center / cover fixed no-repeat;
+            }
+
+
+
+            /* Columns mobile settings */
+
+            .cols-container {
+                flex-wrap: wrap;
+                flex-direction: column;
+            }
+
+            .navmenu-container {
+                justify-content: center;
+                height: 7vh;
+                width: 100%;
+                position: fixed;
+                background-color: rgb(75, 0, 15);
+            }
+
+            .mainsection-container {
+                margin: 80vh 0 0 0;
+            }
+
+            .sidesection-container {
+                padding: 0;
+                border: 0;
+            }
+
+
+
+            /* Navbar mobile settings */
+
+            .fixednav {
+                top: unset;
+                flex-wrap: wrap;
+                flex-direction: row;
+                justify-content: space-between;
+                height: unset;
+                width: 90vw;
+            }
+
+            .nav, li, a {
+                font-size: 0.55rem;
+                width: 4rem;
+            }
+
+            .active, .navbutton:hover {
+                border: 0;
+                padding: 0;
+                background-color: black;
+                height: 7vh;
+                display: flex;
+                align-items: center;
+                box-shadow: none;
+                justify-content: center;
+                margin: 0 3% 0 3%;
+                border-radius: 0;
+            }
+
+
+
+            /* Main section mobile settings */
+
+            .article {
+                width: 100vw;
+                margin: 0;
+                padding: 0;
+            }
+
+            .article p {
+                padding: 0 3% 0 3%;
+            }
+
+            .article-p-side {
+                padding: 0;
+            }
+
+            .div1-article-img-side {
+                flex-direction: column;
+            }
+
+            .div2-article-img-side {
+                padding: 0 2% 0 2%;
+            }
+
+            .sections {
+                padding: 7% 1% 1% 1%;
+            }
+            
+            .sidecards {
+                background-color: rgba(0, 0, 0, 0.900);
+            }
+
+            .footer {
+                height: 5vh;
+            }
+    }
+
+
+
+/* Tablet settings */
+
+    @media screen and (max-width: 1366px) and (min-width: 768px) {
+        
+        h1, h2, h3 {
+            font-size: 100%;
+            margin: 0 0 13% 0;
+        }
+
+        nav, li, a {
+            font-size: 95%;
+        }
+
+        .active, .navbutton:hover {
+            border-bottom: 0.2rem solid aliceblue;
+            border-top: 0.2rem solid aliceblue;
+        }
+
+        .mainsection-container {
+            margin: 87vh 0 0 0;
+        }
+
+        .div1-article-img-side {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .article {
+            padding: 0;
+            margin: 0 5% 0 0;
+
+        }
+
+        .navmenu-container {
+            flex: 1;
+        }
+        
+        .mainsection-container {
+            flex: 3;
+        }
+        
+        .sidesection-container {
+            flex: 2;
+            margin: 66vh 0 0 0;
+        }
+    }
+
+
+
+/* Screen setting for 1700px and lower */
+
+    @media (max-width: 1700px) {
+
+        .div1-article-img-side {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+    }
