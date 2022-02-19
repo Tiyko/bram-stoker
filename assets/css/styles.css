@@ -45,7 +45,7 @@
 /* Background images */
 
     .bio-background-img {
-        background: url("../images/Bram-Stoker-and-the-Wilde-Family-wide.jpeg") center center / cover fixed no-repeat;
+        background: url("../images/bram-stoker-and-the-wilde-family-wide.jpeg") center center / cover fixed no-repeat;
     }
 
     .career-background-img {
@@ -257,7 +257,7 @@
             /* Background images for phones */
 
             .bio-background-img {
-                background: url("../images/Bram-Stoker-and-the-Wilde-Family-phone.jpeg") center center / cover fixed no-repeat;
+                background: url("../images/bram-stoker-and-the-wilde-family-phone.jpeg") center center / cover fixed no-repeat;
             }
 
             .about-background-img {
