@@ -42,7 +42,6 @@
     }
 
 
-
 /* Background images */
 
     .bio-background-img {
@@ -94,7 +93,6 @@
         padding: 0 2% 0 0;
         margin: 69vh 0 0 0;
     }
-
 
 
 /* Navigation bar settings */
@@ -157,7 +155,6 @@
     }
 
 
-
 /* Main section settings */
 
     .article {
@@ -211,7 +208,6 @@
 
 
 
-
 /* Side section settings */
 
     .sidecards {
@@ -233,7 +229,6 @@
         border-radius: 3%;
         margin: 5% 0 5% 0;
     }
-
 
 
 /* Footer settings */
@@ -259,9 +254,7 @@
                 height: unset;
             }
 
-
-
-        /* Background images for phones */
+            /* Background images for phones */
 
             .bio-background-img {
                 background: url("../images/Bram-Stoker-and-the-Wilde-Family-phone.jpeg") center center / cover fixed no-repeat;
@@ -299,7 +292,6 @@
             }
 
 
-
             /* Navbar mobile settings */
 
             .fixednav {
@@ -328,7 +320,6 @@
                 margin: 0 3% 0 3%;
                 border-radius: 0;
             }
-
 
 
             /* Main section mobile settings */
@@ -367,7 +358,6 @@
                 height: 5vh;
             }
     }
-
 
 
 /* Tablet settings */
@@ -417,7 +407,6 @@
             margin: 66vh 0 0 0;
         }
     }
-
 
 
 /* Screen setting for 1700px and lower */
