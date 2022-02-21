@@ -19,7 +19,7 @@
         border-bottom: 0.5px solid aliceblue;
         padding: 8% 0 0 10%;
         color: aliceblue;
-        margin: 0% 0 10% 0;
+        margin: 0% 0 5% 0;
         font-size: 1.8rem;
     }
 
@@ -38,7 +38,7 @@
 
     table {
         width: 100%;
-        padding: 0 1% 10% 2%;
+        padding: 0 1% 20% 2%;
         border-spacing: 0;
     }
 
@@ -85,14 +85,14 @@
     .mainsection-container {
         background-color: transparent;
         flex: 3;
-        margin: 70vh 0 0 0;
+        margin: 71vh 0 0 0;
     }
 
     .sidesection-container {
         background-color: transparent;
         flex: 1;
         padding: 0 2% 0 0;
-        margin: 69vh 0 0 0;
+        margin: 64vh 0 0 0;
     }
 
 
@@ -113,6 +113,7 @@
         position: fixed;
         top: 15vh;
         padding: 0;
+        margin: 0 0 0 5%;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
@@ -203,7 +204,7 @@
 
     .sections {
         box-shadow: 4px 8px 8px 4px rgba(0, 0, 0, 0.2), 4px 6px 20px 4px rgba(0, 0, 0, 0.19);
-        padding: 0 7% 7% 7%;
+        padding: 0 7% 1% 7%;
         margin: 5% 0 5% 0;
         background-color: rgba(0, 0, 0, 0.900);
     }
@@ -214,8 +215,9 @@
     .sidecards {
         display: flex;
         flex-direction: column;
-        box-shadow: 4px 8px 8px 4px rgba(228, 228, 228, 0.2), 4px 6px 20px 4px rgba(255, 253, 253, 0.19);
+        box-shadow: 4px 8px 8px 4px rgba(44, 44, 44, 0.2), 4px 6px 20px 4px rgba(44, 44, 44, 0.2);
         background-color: rgba(0, 0, 0, 0.500);
+        margin: 0 0 15% 0;
     }
 
     .sidecards p {
@@ -282,7 +284,7 @@
             }
 
             .mainsection-container {
-                margin: 80vh 0 0 0;
+                margin: 70vh 0 0 0;
             }
 
             .sidesection-container {
@@ -347,7 +349,7 @@
             }
 
             .sections {
-                padding: 7% 1% 1% 1%;
+                padding: 0 1% 1% 1%;
             }
             
             .sidecards {
@@ -376,10 +378,6 @@
         .active, .navbutton:hover {
             border-bottom: 0.2rem solid aliceblue;
             border-top: 0.2rem solid aliceblue;
-        }
-
-        .mainsection-container {
-            margin: 87vh 0 0 0;
         }
 
         .div1-article-img-side {
