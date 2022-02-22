@@ -24,8 +24,8 @@
     }
 
     p {
-        letter-spacing: 0.04rem;
-        font-size: 1rem;
+        letter-spacing: 0.03rem;
+        font-size: 0.9rem;
         color: aliceblue;
         margin: 5% 0 5% 0;
     }
@@ -101,12 +101,8 @@
     nav, li, a {
         text-decoration: none;
         list-style: none;
-        font-size: 1rem;
-        color: aliceblue;
-        text-transform: uppercase;
-        font-weight: bold;
         width: 85%;
-        display: flex;
+
     }
 
     .fixednav {
@@ -130,6 +126,14 @@
     .navbutton {
         font-family: 'Merienda', sans-serif;
         border-bottom: 0.12rem solid aliceblue;
+        font-family: 'Merienda', sans-serif;
+        font-size: 1rem;
+        color: aliceblue;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-shadow: #000 4px 4px 4px,   #000 4px 4px 4px,   #000 4px 4px 4px, #000 4px 4px 4px,   #000 4px 4px 4px,   #000 4px 4px 4px;
+        border-bottom: 0.12rem solid aliceblue;
+        display: flex;
         
     }
 
@@ -305,9 +309,12 @@
                 width: 90vw;
             }
 
-            .nav, li, a {
-                font-size: 0.55rem;
+            nav, li, a {
                 width: 4rem;
+            }
+
+            .navbutton {
+                font-size: 60%;
             }
 
             .active, .navbutton:hover {
@@ -371,8 +378,8 @@
             margin: 0 0 13% 0;
         }
 
-        nav, li, a {
-            font-size: 95%;
+        .navbutton {
+            font-size: 0.8rem;
         }
 
         .active, .navbutton:hover {
@@ -402,7 +409,6 @@
         
         .sidesection-container {
             flex: 2;
-            margin: 66vh 0 0 0;
         }
     }
 
