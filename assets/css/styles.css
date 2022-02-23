@@ -10,7 +10,6 @@
 
     body {
         font-family: 'Oxygen', sans-serif;
-        background-color: rgb(75, 0, 15);
         overflow-x: hidden;
     }
 
@@ -46,19 +45,19 @@
 /* Background images */
 
     .bio-background-img {
-        background: url("../images/bram-stoker-and-the-wilde-family-wide.jpeg") center center / cover fixed no-repeat;
+        background: url("../images/bram-stoker-and-the-wilde-family-wide.jpeg") 100% 100% / cover fixed no-repeat rgb(100, 100, 100);
     }
 
     .career-background-img {
-        background: url("../images/stoker-front-pic-wide.jpg") center center / cover fixed no-repeat;
+        background: url("../images/stoker-front-pic-wide.jpg") 100% 100% / cover fixed no-repeat rgb(100, 100, 100);
     }
 
     .festival-background-img {
-        background: url("../images/festival-background.jpg") center center / cover fixed no-repeat;
+        background: url("../images/festival-background.jpg") 100% 100% / cover fixed no-repeat rgb(100, 100, 100);
     }
 
     .about-background-img {
-        background: url("../images/festival-banner.jpg") center center / cover fixed no-repeat;
+        background: url("../images/festival-banner.jpg") 100% 100% / cover fixed no-repeat rgb(100, 100, 100);
     }
 
 /* Columns settings */
