@@ -45,19 +45,19 @@
 /* Background images */
 
     .bio-background-img {
-        background: url("../images/bram-stoker-and-the-wilde-family-wide.jpeg") 100% 100% / cover fixed no-repeat rgb(100, 100, 100);
+        background: url("../images/bram-stoker-and-the-wilde-family-wide.jpeg") 50% 50% / cover fixed no-repeat rgb(100, 100, 100);
     }
 
     .career-background-img {
-        background: url("../images/stoker-front-pic-wide.jpg") 100% 100% / cover fixed no-repeat rgb(100, 100, 100);
+        background: url("../images/stoker-front-pic-wide.jpg") 50% 50% / cover fixed no-repeat rgb(100, 100, 100);
     }
 
     .festival-background-img {
-        background: url("../images/festival-background.jpg") 100% 100% / cover fixed no-repeat rgb(100, 100, 100);
+        background: url("../images/festival-background.jpg") 50% 50% / cover fixed no-repeat rgb(100, 100, 100);
     }
 
     .about-background-img {
-        background: url("../images/festival-banner.jpg") 100% 100% / cover fixed no-repeat rgb(100, 100, 100);
+        background: url("../images/festival-banner.jpg") 50% 50% / cover fixed no-repeat rgb(100, 100, 100);
     }
 
 /* Columns settings */
@@ -125,24 +125,21 @@
     .navbutton {
         font-family: 'Merienda', sans-serif;
         border-bottom: 0.12rem solid aliceblue;
-        font-family: 'Merienda', sans-serif;
         font-size: 1rem;
         color: aliceblue;
         font-weight: bold;
         text-transform: uppercase;
-        text-shadow: #000 4px 4px 4px,   #000 4px 4px 4px,   #000 4px 4px 4px, #000 4px 4px 4px,   #000 4px 4px 4px,   #000 4px 4px 4px;
-        border-bottom: 0.12rem solid aliceblue;
+        text-shadow: rgb(0 0 0) -1px -1px 2px, rgb(0 0 0) -2px -2px 2px, rgb(0 0 0) -3px -3px 2px, rgb(0 0 0) 1px 1px 2px, rgb(0 0 0) 2px 2px 2px, rgb(0 0 0) 3px 3px 2px;
         display: flex;
-        
     }
 
     /* Makes navigation button hover when active */
     .active, .navbutton:hover {
         border-bottom: 0.4rem solid aliceblue;
         border-top: 0.4rem solid aliceblue;
-        border-radius: 15%;
+        border-radius: 50%;
         padding: 7%;
-        box-shadow: 1px 4px 8px 1px rgba(255, 255, 255, 0.541), 2px 5px 11px 2px rgba(205, 233, 47, 0.61);
+        box-shadow: inset rgb(0 0 0) 3px 3px 10px 2px, rgb(255 255 255) -3px -3px 5px 0px, inset rgb(0 0 0) -3px -3px 10px 1px, rgb(255 255 255) 3px 3px 5px 0px;
         animation: active 3s;
         justify-content: space-evenly;
     }
