@@ -76,11 +76,9 @@
         min-height: 100vh;
         min-width: 100vw;
         display: flex;
-        flex-direction: row;
     }
 
     .navmenu-container {
-        background-color: transparent;
         display: flex;
         flex: 1;
         flex-direction: column;
@@ -88,7 +86,6 @@
     }
 
     .mainsection-container {
-        background-color: transparent;
         flex: 9;
         display: flex;
     }
@@ -121,7 +118,7 @@
 
     .navbutton {
         font-family: 'Merienda', sans-serif;
-        border-bottom: 0.4rem solid rgb(192, 192, 192);
+        border-bottom: 0.2rem solid rgb(192, 192, 192);
         border-radius: 50%;
         font-size: 0.9rem;
         color: aliceblue;
@@ -135,7 +132,7 @@
     .active, .navbutton:hover {
         border: outset;
         padding: 2%;
-        box-shadow: inset rgb(192 192 192) 3px 3px 20px 20px, rgb(0 0 0) -3px -3px 5px 0px, inset rgb(192 192 192) -3px -3px 20px 20px, rgb(0 0 0) 3px 3px 5px 0px;
+        box-shadow: inset rgb(132 132 132) 3px 3px 20px 20px, rgb(0 0 0) -3px -3px 5px 0px, inset rgb(192 192 192) -3px -3px 20px 20px, rgb(0 0 0) 3px 3px 5px 0px;
         animation: active 0.5s;
         justify-content: space-evenly;
     }
@@ -255,17 +252,16 @@
             h1, h2, h3 {
                 font-size: 1rem;
             }
-            
-            .background-video {
-                width: unset;
-                height: unset;
-            }
 
             /* Background images for phones */
 
-            .bio-background-img {
-                background: url("../images/bram-stoker-and-the-wilde-family-phone.jpeg") center center / cover fixed no-repeat;
+            .navmenu-background {
+                background: url("../images/navbg-phones.png");
             }
+
+            .bio-background-img {
+                background: url("../images/biobg1670x1080.png") left / cover fixed no-repeat rgb(100, 100, 100);
+            }    
 
             .about-background-img {
                 background: url("../images/bramstoker_festival1.jpg") center center / cover fixed no-repeat;
@@ -288,7 +284,7 @@
             }
 
             .mainsection-container {
-                margin: 70vh 0 0 0;
+                flex-direction: column;
             }
 
             .sidesection-container {
@@ -335,7 +331,7 @@
 
             .article {
                 width: 100vw;
-                margin: 0;
+                margin: 70vh 0 0 0;
             }
 
             .article p {
@@ -378,7 +374,7 @@
         }
 
         .navbutton {
-            font-size: 0.8rem;
+            font-size: 60%;
         }
 
         .div1-article-img-side {
@@ -387,32 +383,4 @@
             flex-direction: column;
         }
 
-        .article {
-            margin: 0 5% 0 0;
-
-        }
-
-        .navmenu-container {
-            flex: 1;
-        }
-        
-        .mainsection-container {
-            flex: 3;
-        }
-        
-        .sidesection-container {
-            flex: 2;
-        }
-    }
-
-
-/* Screen setting for 1700px and lower */
-
-    @media (max-width: 1700px) {
-
-        .div1-article-img-side {
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-        }
     }
