@@ -361,6 +361,40 @@
     }
 
 
+/* Standard definition settings */
+
+    @media screen and (min-width: 480px) and (max-width: 640px) {
+
+        /* Global settings for SD*/
+
+        h1, h2, h3 {
+            font-size: 70%;
+        }
+
+        p {
+            font-size: 50%;
+        }
+
+        th, td {
+            font-size: 50%;
+        }
+
+
+        /* Background images for SD */
+
+        .bio-background-img {
+            background: url("../images/biobg640x480.png") 0 0 / 100% 100% fixed no-repeat rgb(100, 100, 100);
+        }
+
+
+        /* Navigation bar settings for SD */
+
+        .navbutton {
+            font-size: 35%;
+        }
+    }
+
+
 /* Tablet settings */
 
     @media screen and (min-width: 768px) and (max-width: 1366px) {
