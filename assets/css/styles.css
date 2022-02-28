@@ -30,7 +30,7 @@
         margin: 5% 0 5% 0;
     }
 
-    th, tr {
+    th, td {
         text-align: left;
         font-size: 0.8rem;
         color: aliceblue;
@@ -46,24 +46,25 @@
 /* Background images */
 
     .navmenu-background {
-        background: url("../images/navbg1.png") 0 50% / contain fixed no-repeat rgb(100, 100, 100);
+        background: url("../images/navbg1.png") 0 0 / 11% 100% fixed no-repeat rgb(100, 100, 100);
     }
 
     .bio-background-img {
-        background: url("../images/biobg1670x1080.png") 10vw 0 / cover fixed no-repeat rgb(100, 100, 100);
+        background: url("../images/biobgfull.png") 0 0 / 100% 100% fixed no-repeat rgb(100, 100, 100);
     }
 
     .career-background-img {
-        background: url("../images/stoker-front-pic-wide.jpg") 50% 50% / cover fixed no-repeat rgb(100, 100, 100);
+        background: url("../images/stoker-front-pic-wide.jpg") 0 0 / 100% 100% fixed no-repeat rgb(100, 100, 100);
     }
 
     .festival-background-img {
-        background: url("../images/festival-background.jpg") 50% 50% / cover fixed no-repeat rgb(100, 100, 100);
+        background: url("../images/festival-background.jpg") 0 0 / 100% 100% fixed no-repeat rgb(100, 100, 100);
     }
 
     .about-background-img {
-        background: url("../images/festival-banner.jpg") 50% 50% / cover fixed no-repeat rgb(100, 100, 100);
+        background: url("../images/festival-banner.jpg") 0 0 / 100% 100% fixed no-repeat rgb(100, 100, 100);
     }
+
 
 /* Columns settings */
 
@@ -167,6 +168,12 @@
         margin: 67vh 0 0 0;
     }
 
+    .sections {
+        box-shadow: 4px 8px 8px 4px rgba(0, 0, 0, 0.2), 4px 6px 20px 4px rgba(0, 0, 0, 0.19);
+        padding: 0 5% 1% 5%;
+        margin: 4% 0 4% 0;
+        background-color: rgba(0, 0, 0, 0.900);
+    }
 
     .div1-article-img-side {
         display: flex;
@@ -201,13 +208,6 @@
     .sideimg, .mainimg {
         border-radius: 3%;
         width: 100%;
-    }
-
-    .sections {
-        box-shadow: 4px 8px 8px 4px rgba(0, 0, 0, 0.2), 4px 6px 20px 4px rgba(0, 0, 0, 0.19);
-        padding: 0 5% 1% 5%;
-        margin: 4% 0 4% 0;
-        background-color: rgba(0, 0, 0, 0.900);
     }
 
 
@@ -245,30 +245,27 @@
 
 /* Mobile phones settings */
 
-    @media (max-width: 767px) {
+    @media (max-width: 479px) {
 
-            /* Global mobile phones adjustments */
+            /* Global settings for moble phones*/
 
             h1, h2, h3 {
                 font-size: 1rem;
             }
 
-            /* Background images for phones */
+
+            /* Background image settings for mobile phones */
 
             .navmenu-background {
-                background: url("../images/navbg-phones.png");
+                background: url("../images/navbg-phones.png") 0 0 / 100% 10% fixed no-repeat rgb(100, 100, 100);
             }
 
             .bio-background-img {
-                background: url("../images/biobg1670x1080.png") left / cover fixed no-repeat rgb(100, 100, 100);
-            }    
-
-            .about-background-img {
-                background: url("../images/bramstoker_festival1.jpg") center center / cover fixed no-repeat;
+                background: url("../images/biobg480x847.png") 0 0 / 100% 100% fixed no-repeat rgb(100, 100, 100);
             }
 
 
-            /* Columns mobile settings */
+            /* Columns mobile phones settings */
 
             .cols-container {
                 flex-wrap: wrap;
@@ -294,7 +291,7 @@
             }
 
 
-            /* Navbar mobile settings */
+            /* Navigation bar settings for mobile phones */
 
             .fixednav {
                 top: unset;
@@ -327,7 +324,7 @@
             }
 
 
-            /* Main section mobile settings */
+            /* Main section settings for mobile phones */
 
             .article {
                 width: 100vw;
@@ -366,21 +363,34 @@
 
 /* Tablet settings */
 
-    @media screen and (max-width: 1366px) and (min-width: 768px) {
+    @media screen and (min-width: 768px) and (max-width: 1366px) {
         
+
+        /* Global settings for Tablets*/
+
         h1, h2, h3 {
-            font-size: 100%;
-            margin: 0 0 13% 0;
+            font-size: 95%;
         }
+
+        p {
+            font-size: 80%;
+        }
+
+        th, td {
+            font-size: 80%;
+        }
+
+
+        /*Background image settings for Tablets*/
+
+        .bio-background-img {
+            background: url("../images/biobg1280x720.png") 0 0 / 100% 100% fixed no-repeat rgb(100, 100, 100);
+        }
+
+
+        /* Navigation bar settings for Tablets */
 
         .navbutton {
-            font-size: 60%;
+            font-size: 50%;
         }
-
-        .div1-article-img-side {
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-        }
-
     }
