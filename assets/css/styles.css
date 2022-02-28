@@ -27,7 +27,7 @@
         text-indent: 5%;
         font-size: 0.9rem;
         color: aliceblue;
-        margin: 5% 0 5% 0;
+        margin: 0 0 2% 0;
     }
 
     th, td {
@@ -175,49 +175,22 @@
         background-color: rgba(0, 0, 0, 0.900);
     }
 
-    .div1-article-img-side {
+    .article-cards {
         display: flex;
         align-items: center;
+        padding: 2%;
     }
 
-    .div2-article-img-side {
-        text-align: center;
-        border-radius: 5%;
-        flex: 1;
-        box-shadow: 4px 8px 8px 4px rgba(228, 228, 228, 0.2), 4px 6px 20px 4px rgba(255, 253, 253, 0.19);
-
-    }
-
-    .article-p-side {
-        padding: 0 3% 0 3%;
-        flex: 1;
-    }
-
-    .div1-article-img-center {
-        display: flex;
-        justify-content: center;
-        margin: 10% 0 0 0;
-    }
-
-    .div2-article-img-center {
-        border-radius: 3%;
-        text-align: center;
-        box-shadow: 4px 8px 8px 4px rgba(228, 228, 228, 0.2), 4px 6px 20px 4px rgba(255, 253, 253, 0.19);
-    }
-
-    .sideimg, .mainimg {
-        border-radius: 3%;
+    .cards-img {
         width: 100%;
     }
 
 
 /* Side section settings */
 
-    .sidecards {
+    .side-cards {
         display: flex;
         flex-direction: column;
-        box-shadow: 4px 8px 8px 4px rgba(44, 44, 44, 0.2), 4px 6px 20px 4px rgba(44, 44, 44, 0.2);
-        background-color: rgba(0, 0, 0, 0.500);
         margin: 0 0 15% 0;
     }
 
@@ -331,27 +304,11 @@
                 margin: 70vh 0 0 0;
             }
 
-            .article p {
-                padding: 0 3% 0 3%;
-            }
-
-            .article-p-side {
-                padding: 0;
-            }
-
-            .div1-article-img-side {
-                flex-direction: column;
-            }
-
-            .div2-article-img-side {
-                padding: 0 2% 0 2%;
-            }
-
             .sections {
                 padding: 0 1% 1% 1%;
             }
             
-            .sidecards {
+            .side-cards {
                 background-color: rgba(0, 0, 0, 0.900);
             }
 
