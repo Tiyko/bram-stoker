@@ -241,101 +241,101 @@
 
     @media (max-width: 479px) {
 
-            /* Global settings for moble phones*/
+        /* Global settings for moble phones*/
 
-            h1, h2, h3 {
-                font-size: 1rem;
-            }
-
-
-            /* Background image settings for mobile phones */
-
-            .navmenu-background {
-                background: url("../images/navbg-phones.png") 0 0 / 100% 10% fixed no-repeat rgb(100, 100, 100);
-            }
-
-            .bio-background-img {
-                background: url("../images/biobg480x847.png") 0 0 / 100% 100% fixed no-repeat rgb(100, 100, 100);
-            }
+        h1, h2, h3 {
+            font-size: 1rem;
+        }
 
 
-            /* Columns mobile phones settings */
+        /* Background image settings for mobile phones */
 
-            .cols-container {
-                flex-wrap: wrap;
-                flex-direction: column;
-            }
+        .navmenu-background {
+            background: url("../images/navbg-phones.png") 0 0 / 100% 10% fixed no-repeat rgb(100, 100, 100);
+        }
 
-            .navmenu-container {
-                justify-content: center;
-                height: 7vh;
-                width: 100%;
-                position: fixed;
-                background-color: rgb(75, 0, 15);
-            }
-
-            .mainsection-container {
-                flex-direction: column;
-            }
-
-            .sidesection-container {
-                padding: 0;
-                border: 0;
-                margin: 20vh 0 0 0;
-            }
+        .bio-background-img {
+            background: url("../images/biobg480x847.png") 0 0 / 100% 100% fixed no-repeat rgb(100, 100, 100);
+        }
 
 
-            /* Navigation bar settings for mobile phones */
+        /* Columns mobile phones settings */
 
-            .fixednav {
-                top: unset;
-                flex-wrap: wrap;
-                flex-direction: row;
-                justify-content: space-between;
-                height: unset;
-                width: 90vw;
-            }
+        .cols-container {
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
 
-            nav, li, a {
-                width: 4rem;
-            }
+        .navmenu-container {
+            justify-content: center;
+            height: 7vh;
+            width: 100%;
+            position: fixed;
+            background-color: rgb(75, 0, 15);
+        }
 
-            .navbutton {
-                font-size: 60%;
-            }
+        .mainsection-container {
+            flex-direction: column;
+        }
 
-            .active, .navbutton:hover {
-                border: 0;
-                padding: 0;
-                background-color: black;
-                height: 7vh;
-                display: flex;
-                align-items: center;
-                box-shadow: none;
-                justify-content: center;
-                margin: 0 3% 0 3%;
-                border-radius: 0;
-            }
+        .sidesection-container {
+            padding: 0;
+            border: 0;
+            margin: 20vh 0 0 0;
+        }
 
 
-            /* Main section settings for mobile phones */
+        /* Navigation bar settings for mobile phones */
 
-            .article {
-                width: 100vw;
-                margin: 70vh 0 0 0;
-            }
+        .fixednav {
+            top: unset;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-between;
+            height: unset;
+            width: 90vw;
+        }
 
-            .sections {
-                padding: 0 1% 1% 1%;
-            }
-            
-            .side-cards {
-                background-color: rgba(0, 0, 0, 0.900);
-            }
+        nav, li, a {
+            width: 4rem;
+        }
 
-            .footer {
-                height: 5vh;
-            }
+        .navbutton {
+            font-size: 60%;
+        }
+
+        .active, .navbutton:hover {
+            border: 0;
+            padding: 0;
+            background-color: black;
+            height: 7vh;
+            display: flex;
+            align-items: center;
+            box-shadow: none;
+            justify-content: center;
+            margin: 0 3% 0 3%;
+            border-radius: 0;
+        }
+
+
+        /* Main section settings for mobile phones */
+
+        .article {
+            width: 100vw;
+            margin: 70vh 0 0 0;
+        }
+
+        .sections {
+            padding: 0 1% 1% 1%;
+        }
+        
+        .side-cards {
+            background-color: rgba(0, 0, 0, 0.900);
+        }
+
+        .footer {
+            height: 5vh;
+        }
     }
 
 
