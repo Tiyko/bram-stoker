@@ -354,7 +354,7 @@
         }
 
         th, td {
-            font-size: 50%;
+            font-size: 40%;
         }
 
 
@@ -369,6 +369,24 @@
 
         .navbutton {
             font-size: 35%;
+        }
+
+
+        /* Main section settings for SD*/
+
+        .cards-wrapper {
+            flex: 1;
+            margin: 0;
+        }
+
+        .article-paragraphs {
+            flex: 1;
+            padding: 0 2% 0 2%;
+        }
+
+        .article-paragraphs-centered {
+            flex: 1;
+            padding: 0 2% 0 2%;
         }
     }
 
