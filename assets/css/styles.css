@@ -9,37 +9,37 @@
     }
 
     body {
-        font-family: 'Oxygen', sans-serif;
+        font-family: 'Barlow', sans-serif;
+        font-size: 1rem;
+        font-weight: 400;
         overflow-x: hidden;
     }
 
     h1, h2, h3 {
         font-family: 'Sriracha', sans-serif;
-        border-bottom: 0.5px solid aliceblue;
-        padding: 4% 0 0 7%;
-        color: aliceblue;
-        margin: 0% 0 5% 0;
+        border-bottom: 0.5px solid rgb(0, 0, 0);
+        padding: 2% 0 0 7%;
+        color: rgb(0, 0, 0);
+        margin: 0% 0 3% 0;
         font-size: 1.8rem;
     }
 
     p {
-        letter-spacing: 0.03rem;
+        letter-spacing: 0.02rem;
         text-indent: 5%;
-        font-size: 0.9rem;
-        color: aliceblue;
-        margin: 0 0 2% 0;
+        text-align: justify;
+        color: rgb(0, 0, 0);
     }
 
     th, td {
         text-align: left;
-        font-size: 0.8rem;
-        color: aliceblue;
+        font-size: 0.9rem;
     }
 
     table {
         width: 100%;
         padding: 0 1% 20% 2%;
-        border-spacing: 0;
+        border-spacing: 0.5rem;
     }
 
 
@@ -157,47 +157,68 @@
     .article {
         background-color: transparent;
         margin: 70vh 2% 0 2%;
-        flex: 3;
+        flex: 8;
 
     }
 
     .sidesection-container {
         background-color: transparent;
-        flex: 1;
-        padding: 0 2% 0 0;
-        margin: 67vh 0 0 0;
+        flex: 2;
+        margin: 67vh 2% 0 0;
     }
 
     .sections {
-        box-shadow: 4px 8px 8px 4px rgba(0, 0, 0, 0.2), 4px 6px 20px 4px rgba(0, 0, 0, 0.19);
-        padding: 0 5% 1% 5%;
+        box-shadow: 0px 0px 10px 5px rgb(0 0 0 / 50%);
+        padding: 0 2% 3% 2%;
         margin: 4% 0 4% 0;
-        background-color: rgba(0, 0, 0, 0.900);
+        background-color: rgb(240, 248, 255);
     }
 
-    .article-cards {
+    .sections-wrapper {
         display: flex;
         align-items: center;
-        padding: 2%;
+    }
+
+    .article-paragraphs {
+        flex: 3;
+        padding: 0 5% 0 5%;
+        text-align: justify;
+    }
+
+    .article-paragraphs-centered {
+        flex: 2;
+        padding: 0 5% 0 5%;
+        text-align: justify;
+    }
+
+    .cards-wrapper {
+        flex: 1;
+        margin: 0 5% 0 5%;
+        box-shadow: 0px 0px 10px 5px rgb(0 0 0 / 50%);
     }
 
     .cards-img {
         width: 100%;
     }
 
+    .cards-paragraphs { 
+        text-indent: 0;
+        padding: 3% 0 2% 0;
+        text-align: center;
+    }
 
 /* Side section settings */
+
+    .side-sections {
+        background-color: rgb(240, 248, 255);
+    }
 
     .side-cards {
         display: flex;
         flex-direction: column;
-        margin: 0 0 15% 0;
-    }
-
-    .sidecards p {
-        display: flex;
-        justify-content: center;
-        padding: 0 5% 0 5%;
+        margin: 15% 0 15% 0;
+        background-color: rgb(240, 248, 255);
+        box-shadow: 0px 0px 10px 5px rgb(0 0 0 / 50%);
     }
 
     iframe {
