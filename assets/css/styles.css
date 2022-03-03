@@ -156,7 +156,7 @@
 
     .article {
         background-color: transparent;
-        margin: 70vh 2% 0 2%;
+        margin: 74vh 2% 0 2%;
         flex: 8;
 
     }
@@ -169,7 +169,7 @@
 
     .sections {
         box-shadow: 0px 0px 10px 5px rgb(0 0 0 / 50%);
-        padding: 0 2% 3% 2%;
+        padding: 0 2% 2% 2%;
         margin: 4% 0 4% 0;
         background-color: rgb(240, 248, 255);
     }
@@ -177,23 +177,29 @@
     .sections-wrapper {
         display: flex;
         align-items: center;
+        margin: 0 0 3% 0;
+    }
+
+
+    .article-paragraphs, .article-paragraphs-centered {
+        padding: 1% 2% 1% 2%;
+        text-align: justify;
+        box-shadow: 0px 0px 10px 5px rgb(0 0 0 / 50%);
+        background-color: white;
+        border-radius: 10px;
     }
 
     .article-paragraphs {
         flex: 3;
-        padding: 0 5% 0 5%;
-        text-align: justify;
     }
 
     .article-paragraphs-centered {
         flex: 2;
-        padding: 0 5% 0 5%;
-        text-align: justify;
     }
 
     .cards-wrapper {
-        flex: 1;
-        margin: 0 5% 0 5%;
+        flex: 1.5;
+        margin: 0 4% 0 4%;
         box-shadow: 0px 0px 10px 5px rgb(0 0 0 / 50%);
     }
 
@@ -201,7 +207,7 @@
         width: 100%;
     }
 
-    .cards-paragraphs { 
+    .cards-paragraph { 
         text-indent: 0;
         padding: 3% 0 2% 0;
         text-align: center;
@@ -355,6 +361,10 @@
 
         th, td {
             font-size: 40%;
+        }
+
+        table {
+            border-spacing: 0;
         }
 
 
