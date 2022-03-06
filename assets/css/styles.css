@@ -58,7 +58,7 @@
     }
 
     .festival-background-img {
-        background: url("../images/festival-background.jpg") 0 0 / 100% 100% fixed no-repeat rgb(100, 100, 100);
+        background: url("../images/festival_bg_fullhd.jpg") top right / 100% 100% fixed no-repeat rgb(100, 100, 100);
     }
 
     .about-background-img {
@@ -98,6 +98,7 @@
         text-decoration: none;
         list-style: none;
         width: 85%;
+        color: rgb(255, 69, 0);
 
     }
 
@@ -114,7 +115,6 @@
 
     a:hover {
         cursor: pointer;
-        color: aliceblue;
     }
 
     .navbutton {
@@ -163,8 +163,8 @@
 
     .sidesection-container {
         background-color: transparent;
-        flex: 2;
-        margin: 60vh 2% 0 0;
+        flex: 2.2;
+        margin: 63vh 2% 0 0;
     }
 
     .sections {
@@ -177,10 +177,16 @@
     .sections-wrapper {
         display: flex;
         align-items: center;
-        margin: 2%;
+        margin: 0 2% 0 2%;
+        padding: 1% 0 2% 0;
         border-bottom: 0.5px solid black;
     }
 
+    .festival-wrapper {
+        border: none;
+        margin: 0;
+        padding: 3% 0 0 0;
+    }
 
     .article-paragraphs, .article-paragraphs-centered {
         padding: 1% 2% 1% 2%;
@@ -201,7 +207,7 @@
 
     .cards-wrapper {
         flex: 1.5;
-        margin: 2%;
+        margin: 1%;
         box-shadow: 0px 0px 10px 5px rgb(0 0 0 / 50%);
         border-radius: 10px;
         background-color: white;
@@ -218,6 +224,17 @@
         text-align: center;
     }
 
+    .iframes {
+        box-shadow: unset;
+    }
+
+    iframe {
+        width: 100%;
+        height: 275px;
+        border: none;
+    }
+
+
 /* Side section settings */
 
     .side-sections {
@@ -229,6 +246,7 @@
     }
 
     .side-cards {
+        width: 100%;
         display: flex;
         flex-direction: column;
         margin: 5% 0 5% 0;
@@ -238,12 +256,6 @@
 
     .side-cards-item {
         width: 100%;
-    }
-
-    iframe {
-        width: 100%;
-        height: 250px;
-        border: none;
     }
 
 
