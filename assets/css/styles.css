@@ -162,16 +162,17 @@
 /* Main section settings */
 
     .article {
-        background-color: transparent;
         margin: 62vh 10% 0 10%;
         display: flex;
         flex-direction: column;
         flex: 8;
+    }
 
+    .about-career {
+        margin: 68vh 10% 0 10%;
     }
 
     .sidesection-container {
-        background-color: transparent;
         flex: 2.2;
         margin: 65vh 2% 0 0;
     }
