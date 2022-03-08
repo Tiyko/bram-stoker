@@ -11,14 +11,14 @@
     body {
         font-family: 'Barlow', sans-serif;
         font-size: 1rem;
-        font-weight: 400;
+        font-weight: 500;
         overflow-x: hidden;
     }
 
     h1, h2 {
         font-family: 'Sriracha', sans-serif;
         border-bottom: 2px solid rgb(0, 0, 0);
-        padding: 2% 0 0 7%;
+        padding: 1% 0 0 7%;
         color: rgb(0, 0, 0);
         margin: 0% 0 3% 0;
         font-size: 1.6rem;
@@ -27,6 +27,7 @@
     h3 {
         font-family: 'Sriracha', sans-serif;
         text-indent: 15%;
+        border-bottom: 0.5px solid rgb(0, 0, 0);
     }
 
     p {
@@ -51,23 +52,23 @@
 /* Background images */
 
     .navmenu-background {
-        background: url("../images/navbg1.png") 0 0 / 11% 100% fixed no-repeat rgb(100, 100, 100);
+        background: url("../images/navbg.jpg") 0 0 / 11% 100% fixed no-repeat rgb(156, 111, 62);
     }
 
     .bio-background-img {
-        background: url("../images/biobgfull.png") 0 0 / 100% 100% fixed no-repeat rgb(100, 100, 100);
+        background: url("../images/biobgfull.webp") top right / 93% 100% fixed no-repeat rgb(184, 184, 184);
     }
 
     .career-background-img {
-        background: url("../images/stoker-front-pic-wide.jpg") 0 0 / 100% 100% fixed no-repeat rgb(100, 100, 100);
+        background: url("../images/stoker-front-pic-wide.jpg") 0 0 / 100% 100% fixed no-repeat rgb(184, 184, 184);
     }
 
     .festival-background-img {
-        background: url("../images/festival_bg_fullhd.jpg") top right / 100% 100% fixed no-repeat rgb(100, 100, 100);
+        background: url("../images/festival_bg_fullhd.webp") top right / 100% 100% fixed no-repeat rgb(184, 184, 184);
     }
 
     .about-background-img {
-        background: url("../images/festival-banner.jpg") 0 0 / 100% 100% fixed no-repeat rgb(100, 100, 100);
+        background: url("../images/festival-banner.jpg") 0 0 / 100% 100% fixed no-repeat rgb(184, 184, 184);
     }
 
 
@@ -89,6 +90,7 @@
         flex: 1;
         flex-direction: column;
         align-items: center;
+        box-shadow:  inset 0px 0px 20px 1px rgb(0 0 0);
     }
 
     .mainsection-container {
@@ -103,7 +105,7 @@
         text-decoration: none;
         list-style: none;
         width: 85%;
-        color: rgb(255, 69, 0);
+        color: rgb(200, 0, 0);
 
     }
 
@@ -161,7 +163,9 @@
 
     .article {
         background-color: transparent;
-        margin: 75vh 10% 0 10%;
+        margin: 62vh 10% 0 10%;
+        display: flex;
+        flex-direction: column;
         flex: 8;
 
     }
@@ -169,27 +173,40 @@
     .sidesection-container {
         background-color: transparent;
         flex: 2.2;
-        margin: 63vh 2% 0 0;
+        margin: 65vh 2% 0 0;
     }
 
     .sections {
         box-shadow: 0px 0px 10px 5px rgb(0 0 0 / 50%);
-        padding: 0 2% 2% 2%;
+        padding: 0 2% 1% 2%;
         margin: 4% 0 4% 0;
-        background-color: rgb(240, 248, 255);
+        background-color: rgb(255, 255, 255);
     }
 
     .sections-wrapper {
         display: flex;
         align-items: center;
-        margin: 0 2% 0 2%;
+        margin: 4% 1% 4% 1%;
         padding: 1% 0 2% 0;
-        border-bottom: 0.5px solid black;
+        background-image: linear-gradient(158deg, rgb(231, 100, 37) 0%, rgb(173, 55, 20) 74%);
+        /* background-color: rgb(156, 111, 62); */
+        box-shadow: 0px 0px 10px 5px rgb(0 0 0 / 50%);
+    }
+
+    .header {
+        margin: 6.5% 0 6.5% 0;
+        width: 25vw;
+        align-self: flex-end;
+        border-radius: 0 25px 0 25px;
+    }
+
+    .header-item {
+        margin: 0;
     }
 
     .festival-wrapper {
         border: none;
-        margin: 0;
+        margin: 3% 2% 3% 2%;
         padding: 3% 0 0 0;
     }
 
@@ -197,7 +214,7 @@
         padding: 1% 2% 1% 2%;
         margin: 2%;
         text-align: justify;
-        box-shadow: 0px 0px 10px 5px rgb(0 0 0 / 50%), inset 0px 0px 20px 5px rgb(0 0 0 / 50%);
+        box-shadow: 4px 4px 7px 7px rgb(0 0 0 / 50%);
         background-color: white;
         border-radius: 0 25px 0 25px;
     }
@@ -210,12 +227,16 @@
         flex: 2;
     }
 
+    .credits {
+        text-indent: 10%;
+    }
+
     .cards-wrapper {
         flex: 1.5;
         margin: 1%;
-        box-shadow: 0px 0px 10px 5px rgb(0 0 0 / 50%);
+        box-shadow: 4px 4px 10px 5px rgb(0 0 0 / 50%);
         border-radius: 10px;
-        background-color: white;
+        background-color: rgb(255, 255, 255);
     }
 
     .cards-item {
@@ -243,7 +264,7 @@
 /* Side section settings */
 
     .side-sections {
-        background-color: rgb(240, 248, 255);
+        background-color: rgb(255, 255, 255);
         margin: 0 0 5% 0;
     }
 
@@ -255,7 +276,7 @@
         width: 100%;
         display: flex;
         flex-direction: column;
-        background-color: rgb(240, 248, 255);
+        background-color: rgb(255, 255, 255);
         box-shadow: 0px 0px 10px 5px rgb(0 0 0 / 50%);
     }
 
@@ -273,7 +294,7 @@
 
 /* Mobile phones settings */
 
-    @media (max-width: 479px) {
+    @media (max-width: 559px) {
 
         /* Global settings for moble phones*/
 
@@ -375,7 +396,7 @@
 
 /* Standard definition settings */
 
-    @media screen and (min-width: 480px) and (max-width: 640px) {
+    @media screen and (min-width: 560px) and (max-width: 800px) {
 
         /* Global settings for SD*/
 
@@ -414,7 +435,7 @@
 
         .cards-wrapper {
             flex: 1;
-            margin: 0;
+            margin: 1%;
         }
 
         .article-paragraphs {
@@ -423,7 +444,7 @@
         }
 
         .article-paragraphs-centered {
-            flex: 1;
+            flex: 1.5;
             padding: 0 2% 0 2%;
         }
     }
