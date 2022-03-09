@@ -48,6 +48,16 @@
         border-spacing: 0.35rem;
     }
 
+    li, a {
+        text-decoration: none;
+        list-style: none;
+        color: rgb(200, 0, 0);
+    }
+
+    a:hover {
+        cursor: pointer;
+    }
+
 
 /* Background images */
 
@@ -101,12 +111,9 @@
 
 /* Navigation bar settings */
 
-    nav, li, a {
-        text-decoration: none;
-        list-style: none;
-        width: 85%;
-        color: rgb(200, 0, 0);
 
+    .navbutton {
+        width: 85%;
     }
 
     .fixednav {
@@ -120,11 +127,7 @@
         width: 8vw;
     }
 
-    a:hover {
-        cursor: pointer;
-    }
-
-    .navbutton {
+    .navbutton-item {
         font-family: 'Merienda', sans-serif;
         border-bottom: 0.2rem solid rgb(255, 255, 255);
         border-radius: 50%;
@@ -137,7 +140,7 @@
     }
 
     /* Makes navigation button hover when active */
-    .active, .navbutton:hover {
+    .active, .navbutton-item:hover {
         border: outset;
         padding: 2%;
         box-shadow: inset rgb(132 132 132) 3px 3px 20px 20px, rgb(0 0 0) -3px -3px 5px 0px, inset rgb(192 192 192) -3px -3px 20px 20px, rgb(0 0 0) 3px 3px 5px 0px;
@@ -228,10 +231,10 @@
         flex: 2;
     }
 
-    .external-link {
+    .link {
         font-family: 'Courgette', sans-serif;
         font-weight: 600;
-        font-size: 1.5rem;
+        font-size: 1.3em;
         text-indent: 10%;
         color: rgb(200, 0, 0);
         text-decoration: 0.5px rgb(0, 0, 0) underline;
@@ -298,7 +301,25 @@
 /* Footer settings */
 
     .footer {
-        background-color: aquamarine;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 15vh;
+        justify-content: space-evenly;
+    }
+
+    .footer-title {
+        padding: 0;
+        margin: 0;
+        border: unset;
+        font-size: 1.1rem;
+    }
+
+    .social-media {
+        display: flex;
+        align-items: center;
+        width: 50vw;
+        justify-content: space-evenly;
     }
 
 
