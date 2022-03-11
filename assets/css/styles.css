@@ -165,19 +165,36 @@
 /* Main section settings */
 
     .article {
-        margin: 62vh 10% 0 10%;
+        margin: 85vh 5% 0 5%;
         display: flex;
         flex-direction: column;
         flex: 8;
     }
 
-    .about-career {
-        margin: 68vh 10% 0 10%;
+    .sidesection-container {
+        flex: 2;
+        margin: 10vh 2% 0 0;
     }
 
-    .sidesection-container {
-        flex: 2.2;
-        margin: 65vh 2% 0 0;
+    .scroll-article {
+        margin: 0 0 40% 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-self: center;
+        width: fit-content;
+        background-color: rgb(0 0 0 / 50%);
+    }
+
+    .scroll-p {
+        color: rgb(255, 255, 255);
+        text-align: center;
+        text-indent: 0;
+    }
+
+    .font-awesome-scroll {
+        color: rgb(255, 255, 255);
+        font-size: 2rem;
     }
 
     .sections {
@@ -185,6 +202,7 @@
         padding: 0 2% 1% 2%;
         margin: 4% 0 4% 0;
         background-color: rgb(255, 255, 255);
+        border-radius: 0 25px 0 25px;
     }
 
     .sections-wrapper {
@@ -193,19 +211,7 @@
         margin: 4% 1% 4% 1%;
         padding: 1% 0 2% 0;
         background-image: linear-gradient(158deg, rgb(231, 100, 37) 0%, rgb(173, 55, 20) 74%);
-        /* background-color: rgb(156, 111, 62); */
         box-shadow: 0px 0px 10px 5px rgb(0 0 0 / 50%);
-    }
-
-    .header {
-        margin: 6.5% 0 6.5% 0;
-        width: 25vw;
-        align-self: flex-end;
-        border-radius: 0 25px 0 25px;
-    }
-
-    .header-item {
-        margin: 0;
     }
 
     .festival-wrapper {
@@ -357,6 +363,10 @@
         justify-content: space-evenly;
     }
 
+    .media-icons {
+        font-size: 2rem;
+    }
+
 
 /* Mobile phones settings */
 
@@ -462,42 +472,24 @@
 
 /* Standard definition settings */
 
-    @media screen and (min-width: 560px) and (max-width: 800px) {
-
-        /* Global settings for SD*/
-
-        h1, h2, h3 {
-            font-size: 70%;
-        }
-
-        p {
-            font-size: 50%;
-        }
-
-        th, td {
-            font-size: 40%;
-        }
-
-        table {
-            border-spacing: 0;
-        }
-
+    @media screen and (min-width: 560px) and (max-width: 1024px) {
 
         /* Background images for SD */
 
         .bio-background-img {
-            background: url("../images/biobg640x480.png") 0 0 / 100% 100% fixed no-repeat rgb(100, 100, 100);
+            background: url("../images") 0 0 / 100% 100% fixed no-repeat rgb(100, 100, 100);
         }
 
 
         /* Navigation bar settings for SD */
 
-        .navbutton {
-            font-size: 35%;
+        .navbutton-item {
+            font-size: 60%;
         }
 
 
         /* Main section settings for SD*/
+
 
         .cards-wrapper {
             flex: 1;
@@ -512,40 +504,5 @@
         .article-paragraphs-centered {
             flex: 1.5;
             padding: 0 2% 0 2%;
-        }
-    }
-
-
-/* Tablet settings */
-
-    @media screen and (min-width: 768px) and (max-width: 1366px) {
-        
-
-        /* Global settings for Tablets*/
-
-        h1, h2, h3 {
-            font-size: 95%;
-        }
-
-        p {
-            font-size: 80%;
-        }
-
-        th, td {
-            font-size: 80%;
-        }
-
-
-        /*Background image settings for Tablets*/
-
-        .bio-background-img {
-            background: url("../images/biobg1280x720.png") 0 0 / 100% 100% fixed no-repeat rgb(100, 100, 100);
-        }
-
-
-        /* Navigation bar settings for Tablets */
-
-        .navbutton {
-            font-size: 50%;
         }
     }
