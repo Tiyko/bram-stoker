@@ -1,8 +1,52 @@
-/* Imports fonts from google-fonts */
+
+/*
+-----------------------------------------------------------------
+
+    Legend:
+
+CTRL+F to search key words
+
+    0. Imports font from google-fonts
+
+    1. Global settings
+
+    2. Background image settings
+
+    3. Columns settings
+
+    4. Navigation bar settings
+        4.1 button hover (Search key word)
+        4.2 animation (Search key word)
+
+    5. Main section settings
+        5.1 "Scroll to read more" settings (Search key word)
+
+    6. Side section settings
+
+    7. Footer settings
+
+    8. Mobile phones settings
+        mobile phones (Search key word)
+
+    9. Standard definition settings
+        SD (Search key word)
+
+-----------------------------------------------------------------
+*/
+
+/*
+-----------------------------------------------------------------
+    0. Imports font from google-fonts
+-----------------------------------------------------------------
+*/
     @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Courgette&family=Merienda:wght@400;700&family=Oxygen:wght@300;400;700&family=Sriracha&display=swap');
 
-/* Global settings */
 
+/*
+-----------------------------------------------------------------
+    1. Global settings
+-----------------------------------------------------------------
+*/
     * {
         margin: 0;
         padding: 0;
@@ -58,9 +102,11 @@
         cursor: pointer;
     }
 
-
-/* Background images */
-
+/*
+-----------------------------------------------------------------
+    2. Background image settings
+-----------------------------------------------------------------
+*/
     .navmenu-background {
         background: url("../images/navbg.jpg") 0 0 / 11% 100% fixed no-repeat rgb(156, 111, 62);
     }
@@ -81,9 +127,11 @@
         background: url("../images/festival-banner.jpg") 0 0 / 100% 100% fixed no-repeat rgb(184, 184, 184);
     }
 
-
-/* Columns settings */
-
+/*
+-----------------------------------------------------------------
+    3. Columns settings
+-----------------------------------------------------------------
+*/
     .main-container {
         display: flex;
         flex-direction: column;
@@ -95,6 +143,16 @@
         display: flex;
     }
 
+    .mainsection-container {
+        flex: 9;
+        display: flex;
+    }
+
+/*
+-----------------------------------------------------------------
+    4. Navigation bar settings
+-----------------------------------------------------------------
+*/
     .navmenu-container {
         display: flex;
         flex: 1;
@@ -102,15 +160,6 @@
         align-items: center;
         box-shadow:  inset 0px 0px 20px 1px rgb(0 0 0);
     }
-
-    .mainsection-container {
-        flex: 9;
-        display: flex;
-    }
-
-
-/* Navigation bar settings */
-
 
     .navbutton {
         width: 85%;
@@ -132,14 +181,14 @@
         border-bottom: 0.2rem solid rgb(255, 255, 255);
         border-radius: 50%;
         font-size: 0.9rem;
-        color: aliceblue;
+        color: rgb(255, 255, 255);
         text-transform: uppercase;
         text-shadow: rgb(0 0 0) -1px -1px 20px, rgb(0 0 0) -2px -2px 2px, rgb(0 0 0) -3px -3px 2px, rgb(0 0 0) 1px 1px 20px, rgb(0 0 0) 2px 2px 2px, rgb(0 0 0) 3px 3px 2px;
         display: flex;
         transition: 1.5s;
     }
 
-    /* Makes navigation button hover when active */
+    /* 4.1 Makes navigation button hover when active */
     .active, .navbutton-item:hover {
         border: outset;
         padding: 2%;
@@ -148,7 +197,7 @@
         justify-content: space-evenly;
     }
 
-    /* Makes animation when navigation button is active */
+    /* 4.2 Makes an animation when navigation button is active */
     @keyframes active {
         0% {
         transform: scale(1, 1);
@@ -161,9 +210,12 @@
         }
     }
 
-
-/* Main section settings */
-
+/*
+-----------------------------------------------------------------
+    5. Main section settings
+-----------------------------------------------------------------
+*/
+    /* 5.1 "Scroll to read more" settings - next 4 syntaxes */
     .scroll-container {
         height: 100vh;
         display: flex;
@@ -287,9 +339,11 @@
         border: none;
     }
 
-
-/* Side section settings */
-
+/*
+-----------------------------------------------------------------
+    6. Side section settings
+-----------------------------------------------------------------
+*/
     .side-sections {
         background-color: rgb(255, 255, 255);
         margin: 0 0 5% 0;
@@ -346,8 +400,11 @@
         justify-content: space-evenly;
     }
 
-/* Footer settings */
-
+/*
+-----------------------------------------------------------------
+    7. Footer settings
+-----------------------------------------------------------------
+*/
     .footer {
         display: flex;
         flex-direction: column;
@@ -375,80 +432,61 @@
         font-size: 2rem;
     }
 
-
-/* Mobile phones settings */
-
+/*
+-----------------------------------------------------------------
+    8. Mobile phones settings
+-----------------------------------------------------------------
+*/
     @media (max-width: 559px) {
 
         /* Global settings for moble phones*/
-
         h1, h2, h3 {
             font-size: 1rem;
         }
 
-
         /* Background image settings for mobile phones */
-
         .navmenu-background {
-            background: url("../images/navbg-phones.png") 0 0 / 100% 10% fixed no-repeat rgb(100, 100, 100);
+            background: url("../images/nav_bg_phones.webp") 0 0 / 100% 10% fixed no-repeat rgb(100, 100, 100);
         }
 
         .bio-background-img {
-            background: url("../images/biobg480x847.png") 0 0 / 100% 100% fixed no-repeat rgb(100, 100, 100);
+            background: url("../images") 0 0 / 100% 100% fixed no-repeat rgb(100, 100, 100);
         }
 
-
-        /* Columns mobile phones settings */
-
-        .cols-container {
-            flex-wrap: wrap;
+        /* Columns settings for mobile phones */
+        .mainsection-container {
             flex-direction: column;
         }
 
+        /* Navigation bar settings for mobile phones */
         .navmenu-container {
-            justify-content: center;
             height: 7vh;
             width: 100%;
             position: fixed;
             background-color: rgb(75, 0, 15);
         }
 
-        .mainsection-container {
-            flex-direction: column;
-        }
-
-        .sidesection-container {
-            padding: 0;
-            border: 0;
-            margin: 20vh 0 0 0;
-        }
-
-
-        /* Navigation bar settings for mobile phones */
-
         .fixednav {
-            top: unset;
+            top: 0;
             flex-wrap: wrap;
             flex-direction: row;
-            justify-content: space-between;
-            height: unset;
-            width: 90vw;
-        }
-
-        nav, li, a {
-            width: 4rem;
+            height: 0;
+            width: 100vw;
         }
 
         .navbutton {
-            font-size: 60%;
+            width: unset;
         }
 
-        .active, .navbutton:hover {
+        .navbutton-item {
+            width: 9vh;
+        }
+
+        .active, .navbutton-item:hover {
             border: 0;
             padding: 0;
             background-color: black;
             height: 7vh;
-            display: flex;
             align-items: center;
             box-shadow: none;
             justify-content: center;
@@ -456,61 +494,70 @@
             border-radius: 0;
         }
 
-
         /* Main section settings for mobile phones */
-
         .article {
             width: 100vw;
-            margin: 70vh 0 0 0;
+            margin: 0;
         }
 
         .sections {
             padding: 0 1% 1% 1%;
         }
-        
-        .side-cards {
-            background-color: rgba(0, 0, 0, 0.900);
+
+        .story {
+            scroll-margin-top: 7vh;
         }
 
+        /* Side-section settings for mobile phones */
+        .sidesection-container {
+            padding: 0;
+            border: 0;
+            margin: 20vh 0 0 0;
+        }
+
+        .side-cards {
+            margin: 5% 0 5% 0;
+        }
+
+        /* Footer settings for mobile phones */
         .footer {
-            height: 5vh;
+            height: 15vh;
         }
     }
 
-
-/* Standard definition settings */
-
-    @media screen and (min-width: 560px) and (max-width: 1024px) {
+/*
+-----------------------------------------------------------------
+    9. Standard definition settings
+-----------------------------------------------------------------
+*/
+    @media (max-width: 1280px) {
 
         /* Background images for SD */
-
         .bio-background-img {
             background: url("../images") 0 0 / 100% 100% fixed no-repeat rgb(100, 100, 100);
         }
 
-
         /* Navigation bar settings for SD */
-
         .navbutton-item {
             font-size: 60%;
         }
 
-
         /* Main section settings for SD*/
-
-
-        .cards-wrapper {
-            flex: 1;
-            margin: 1%;
+        .scroll-article {
+            margin: 0 0 20vh 0;
         }
 
-        .article-paragraphs {
-            flex: 1;
-            padding: 0 2% 0 2%;
+        .sections-wrapper {
+            flex-direction: column;
         }
 
-        .article-paragraphs-centered {
-            flex: 1.5;
-            padding: 0 2% 0 2%;
+        .iframes {
+            width: 100%;
+        }
+
+        /* Side section settings for SD */
+        .sidesection-container {
+            flex: 5;
         }
     }
+ 
