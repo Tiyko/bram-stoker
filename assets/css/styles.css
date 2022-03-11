@@ -164,20 +164,16 @@
 
 /* Main section settings */
 
-    .article {
-        margin: 85vh 5% 0 5%;
+    .scroll-container {
+        height: 100vh;
         display: flex;
         flex-direction: column;
-        flex: 8;
-    }
+        justify-content: flex-end;
 
-    .sidesection-container {
-        flex: 2;
-        margin: 10vh 2% 0 0;
     }
 
     .scroll-article {
-        margin: 0 0 40% 0;
+        margin: 0 0 3% 0;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -194,7 +190,19 @@
 
     .font-awesome-scroll {
         color: rgb(255, 255, 255);
-        font-size: 2rem;
+        font-size: 1.5rem;
+    }
+
+    .article {
+        margin: 0 5% 0 5%;
+        display: flex;
+        flex-direction: column;
+        flex: 8;
+    }
+
+    .sidesection-container {
+        flex: 2;
+        margin: 10vh 2% 0 0;
     }
 
     .sections {
