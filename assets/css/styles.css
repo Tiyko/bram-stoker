@@ -16,10 +16,10 @@ CTRL+F to search key words
 
     4. Navigation bar settings
         4.1 button hover (Search key word)
-        4.2 animation (Search key word)
+        4.2 navigation button - animation (Search key word)
 
     5. Main section settings
-        5.1 "Scroll to read more" settings (Search key word)
+        5.1 Scroll to read more - settings (Search key word)
 
     6. Side section settings
 
@@ -33,6 +33,7 @@ CTRL+F to search key words
 
 -----------------------------------------------------------------
 */
+
 
 /*
 -----------------------------------------------------------------
@@ -108,23 +109,23 @@ CTRL+F to search key words
 -----------------------------------------------------------------
 */
     .navmenu-background {
-        background: url("../images/navbg.jpg") 0 0 / 11% 100% fixed no-repeat rgb(156, 111, 62);
+        background: url("../images/nav_bg.jpg") 0 0 / 11% 100% fixed no-repeat rgb(156, 111, 62);
     }
 
     .bio-background-img {
-        background: url("../images/biobgfull.webp") top right / 93% 100% fixed no-repeat rgb(184, 184, 184);
+        background: url("../images/bio_bg.jpg") top right / 93% 100% fixed no-repeat rgb(184, 184, 184);
     }
 
     .career-background-img {
-        background: url("../images/stoker-front-pic-wide.jpg") 0 0 / 100% 100% fixed no-repeat rgb(184, 184, 184);
+        background: url("../images/career_bg.jpg") top right / 93% 100% fixed no-repeat rgb(184, 184, 184);
     }
 
     .festival-background-img {
-        background: url("../images/festival_bg_fullhd.webp") top right / 100% 100% fixed no-repeat rgb(184, 184, 184);
+        background: url("../images/festival_bg.jpg") top right / 93% 100% fixed no-repeat rgb(184, 184, 184);
     }
 
     .about-background-img {
-        background: url("../images/festival-banner.jpg") 0 0 / 100% 100% fixed no-repeat rgb(184, 184, 184);
+        background: url("../images") 0 0 / 100% 100% fixed no-repeat rgb(184, 184, 184);
     }
 
 /*
@@ -183,7 +184,10 @@ CTRL+F to search key words
         font-size: 0.9rem;
         color: rgb(255, 255, 255);
         text-transform: uppercase;
-        text-shadow: rgb(0 0 0) -1px -1px 20px, rgb(0 0 0) -2px -2px 2px, rgb(0 0 0) -3px -3px 2px, rgb(0 0 0) 1px 1px 20px, rgb(0 0 0) 2px 2px 2px, rgb(0 0 0) 3px 3px 2px;
+        text-shadow: rgb(0 0 0) -1px -1px 20px, rgb(0 0 0) -2px -2px 2px,
+                     rgb(0 0 0) -3px -3px 2px,
+                     rgb(0 0 0) 1px 1px 20px, rgb(0 0 0) 2px 2px 2px,
+                     rgb(0 0 0) 3px 3px 2px;
         display: flex;
         transition: 1.5s;
     }
@@ -192,7 +196,10 @@ CTRL+F to search key words
     .active, .navbutton-item:hover {
         border: outset;
         padding: 2%;
-        box-shadow: inset rgb(132 132 132) 3px 3px 20px 20px, rgb(0 0 0) -3px -3px 5px 0px, inset rgb(192 192 192) -3px -3px 20px 20px, rgb(0 0 0) 3px 3px 5px 0px;
+        box-shadow: inset rgb(132 132 132) 3px 3px 20px 20px,
+                    rgb(0 0 0) -3px -3px 5px 0px,
+                    inset rgb(192 192 192) -3px -3px 20px 20px,
+                    rgb(0 0 0) 3px 3px 5px 0px;
         animation: active 0.5s;
         justify-content: space-evenly;
     }
@@ -270,7 +277,9 @@ CTRL+F to search key words
         align-items: center;
         margin: 4% 1% 4% 1%;
         padding: 1% 0 2% 0;
-        background-image: linear-gradient(158deg, rgb(231, 100, 37) 0%, rgb(173, 55, 20) 74%);
+        background-image: linear-gradient(158deg,
+                        rgb(231, 100, 37) 0%,
+                        rgb(173, 55, 20) 74%);
         box-shadow: 0px 0px 10px 5px rgb(0 0 0 / 50%);
     }
 
@@ -366,7 +375,9 @@ CTRL+F to search key words
     }
 
     form {
-        background-image: linear-gradient(158deg, rgb(231, 100, 37) 0%, rgb(173, 55, 20) 74%);
+        background-image: linear-gradient(158deg,
+                        rgb(231, 100, 37) 0%,
+                        rgb(173, 55, 20) 74%);
         margin: 5% 0 0 0;
         padding: 3%;
         box-shadow: 0px 0px 10px 5px rgb(0 0 0 / 50%);
@@ -434,10 +445,59 @@ CTRL+F to search key words
 
 /*
 -----------------------------------------------------------------
+    9. Standard definition settings
+-----------------------------------------------------------------
+*/
+@media (max-width: 1280px) {
+
+    /* Background images for SD */
+    .bio-background-img {
+        background: url("../images/bio_bg_square.jpg") 0 0 / 100% 100% fixed no-repeat rgb(100, 100, 100);
+    }
+
+    .career-background-img {
+        background: url("../images/career_bg_square.jpg") top right / 90% 100% fixed no-repeat rgb(184, 184, 184);
+    }
+
+    .festival-background-img {
+        background: url("../images/festival_bg_square.jpg") 0 0 / 100% 100% fixed no-repeat rgb(184, 184, 184);
+    }
+
+    /* Navigation bar settings for SD */
+    .navbutton-item {
+        font-size: 60%;
+    }
+
+    /* Main section settings for SD*/
+    .scroll-article {
+        margin: 0 0 20vh 0;
+    }
+
+    .sections-wrapper {
+        flex-direction: column;
+    }
+
+    .iframes {
+        width: 100%;
+    }
+
+    /* Side section settings for SD */
+    .sidesection-container {
+        flex: 5;
+    }
+
+    /* Footer settings for SD */
+    .footer {
+        height: 20vh;
+    }
+}
+
+/*
+-----------------------------------------------------------------
     8. Mobile phones settings
 -----------------------------------------------------------------
 */
-    @media (max-width: 559px) {
+    @media (max-width: 768px) {
 
         /* Global settings for moble phones*/
         h1, h2, h3 {
@@ -450,7 +510,15 @@ CTRL+F to search key words
         }
 
         .bio-background-img {
-            background: url("../images") 0 0 / 100% 100% fixed no-repeat rgb(100, 100, 100);
+            background: url("../images/bio_bg_portrait.jpg") 0 7vh / 100% 100% fixed no-repeat rgb(100, 100, 100);
+        }
+
+        .career-background-img {
+            background: url("../images/career_bg_portrait.jpg") 0 0 / 100% 100% fixed no-repeat rgb(184, 184, 184);
+        }
+
+        .festival-background-img {
+            background: url("../images/festival_bg_portrait.jpg") 0 0 / 100% 100% fixed no-repeat rgb(184, 184, 184);
         }
 
         /* Columns settings for mobile phones */
@@ -518,46 +586,25 @@ CTRL+F to search key words
         .side-cards {
             margin: 5% 0 5% 0;
         }
-
-        /* Footer settings for mobile phones */
-        .footer {
-            height: 15vh;
-        }
     }
+        
+        /* Background image landscape settings for mobile phones */
+        @media (max-height: 500px) {
 
-/*
------------------------------------------------------------------
-    9. Standard definition settings
------------------------------------------------------------------
-*/
-    @media (max-width: 1280px) {
-
-        /* Background images for SD */
-        .bio-background-img {
-            background: url("../images") 0 0 / 100% 100% fixed no-repeat rgb(100, 100, 100);
-        }
-
-        /* Navigation bar settings for SD */
-        .navbutton-item {
-            font-size: 60%;
-        }
-
-        /* Main section settings for SD*/
-        .scroll-article {
-            margin: 0 0 20vh 0;
-        }
-
-        .sections-wrapper {
-            flex-direction: column;
-        }
-
-        .iframes {
-            width: 100%;
-        }
-
-        /* Side section settings for SD */
-        .sidesection-container {
-            flex: 5;
-        }
+            .bio-background-img {
+                background: url("../images/bio_bg.jpg") 0 0 / 100% 100% fixed no-repeat rgb(184, 184, 184);
+            }
+        
+            .career-background-img {
+                background: url("../images/career_bg.jpg") 0 0 / 100% 100% fixed no-repeat rgb(184, 184, 184);
+            }
+        
+            .festival-background-img {
+                background: url("../images/festival_bg.jpg") 0 0 / 100% 100% fixed no-repeat rgb(184, 184, 184);
+            }
+        
+            .about-background-img {
+                background: url("../images") 0 0 / 100% 100% fixed no-repeat rgb(184, 184, 184);
+            }
+        
     }
- 
