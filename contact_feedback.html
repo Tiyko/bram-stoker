@@ -13,10 +13,6 @@
 
 <body>
 
-    <div class="about-background">
-        <div class="about-skew"></div>
-    </div>
-    
     <!-- Main Container -->
     <div class="main-container">
         
@@ -24,7 +20,22 @@
         <div class="cols-container">
             
             <!-- Navigation bar -->
-            <nav class="navmenu-container navmenu-background">
+            <nav class="navmenu-container">
+
+                <picture class="navmenu-background">
+                    <source 
+                            type="image/webp"
+                            media="(max-width: 480px)"
+                            srcset="./assets/images/nav_bg_phones_480x70.webp">
+
+                    <source 
+                            type="image/webp"
+                            media="(max-width: 768px)"
+                            srcset="./assets/images/nav_bg_tablets_768x70.webp">
+
+                    <img class="background-item" src="./assets/images/nav_bg_275x1080.jpg" alt="">
+                </picture>
+
                 <ul class="fixednav">
                     <li class="navbutton"><a href="index.html" class="navbutton-item">Biography</a></li>
                     <li class="navbutton"><a href="career.html" class="navbutton-item">Career</a></li>
@@ -35,6 +46,10 @@
             
             <!-- Main Section -->
             <div class="mainsection-container">
+
+                <div class="about-background">
+                    <div class="about-skew"></div>
+                </div>
 
                 <article class="article">
 
@@ -49,7 +64,7 @@
                         <h1>About Website Author</h1>
                         <div class="sections-wrapper">
                         <p class="article-paragraphs">
-                            My name is Ionut (Romanian for Johnny), and this website's purpose is to educate and give an introduction to, the man who gave us Dracula, Bram Stoker. It brings together his life as novelist writter, career in theatre and the commemoration that we have today in Dublin, Ireland on Halloween know as Bram Stoker Festival.
+                            My name is Ionut (Romanian for Johnny), and this website's purpose is to educate and give an introduction to, the man who gave us Dracula, Bram Stoker. It brings together his life as novelist writter, career in theatre and the commemoration that we have today in Dublin, Ireland on Halloween know as Bram Stoker Festival. It serves for our client as an educational introduction into Bram Stoker's life and also as a promotion to the festival at the same time.
                         </p>
                         </div>
                     </header>
