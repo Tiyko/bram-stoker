@@ -45,7 +45,32 @@
             </nav>
             
             <!-- Main Section -->
-            <div class="mainsection-container career-background-img">
+            <div class="mainsection-container">
+
+                    <picture class="background">
+                        <source
+                                type="image/jpg"
+                                media="(max-width: 479px)"
+                                srcset="./assets/images/career_bg_phones_480x1080.jpg">
+
+                        <source
+                                type="image/jpg"
+                                media="(max-height: 480px)"
+                                srcset="./assets/images/career_bg_1730x1080.jpg">
+
+                        <source
+                                type="image/jpg"
+                                media="(max-width: 1023px)"
+                                srcset="./assets/images/career_bg_portrait_768x1080.jpg">
+
+                        <source
+                                type="image/jpg"
+                                media="(max-width: 1024px)"
+                                srcset="./assets/images/career_bg_square_1024x1024.jpg">
+
+                        <img class="background-item" src="./assets/images/career_bg_1730x1080.jpg" alt="An art-work of Dracula">
+                    </picture>
+
                 <article class="article">
 
                     <div class="scroll-container">
