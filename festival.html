@@ -20,7 +20,22 @@
         <div class="cols-container">
             
             <!-- Navigation bar -->
-            <nav class="navmenu-container navmenu-background">
+            <nav class="navmenu-container">
+
+                <picture class="navmenu-background">
+                    <source 
+                            type="image/webp"
+                            media="(max-width: 480px)"
+                            srcset="./assets/images/nav_bg_phones_480x70.webp">
+
+                    <source 
+                            type="image/webp"
+                            media="(max-width: 768px)"
+                            srcset="./assets/images/nav_bg_tablets_768x70.webp">
+
+                    <img class="background-item" src="./assets/images/nav_bg_275x1080.jpg" alt="">
+                </picture>
+
                 <ul class="fixednav">
                     <li class="navbutton"><a href="index.html" class="navbutton-item">Biography</a></li>
                     <li class="navbutton"><a href="career.html" class="navbutton-item">Career</a></li>
