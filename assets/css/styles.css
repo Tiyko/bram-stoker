@@ -560,8 +560,8 @@ CTRL+F to search key words
     @media screen and (max-width: 768px) {
 
         /* Global settings for moble phones*/
-        h1, h2, h3 {
-            font-size: 1rem;
+        h1, h2, h3, .footer-social-media-title, .media-icons {
+            font-size: 1.2rem;
         }
 
         /* Background image settings for mobile phones */
@@ -596,7 +596,7 @@ CTRL+F to search key words
         }
 
         .navbutton-item {
-            width: 9vh;
+            width: 11vh;
         }
 
         .active, .navbutton-item:hover {
@@ -642,12 +642,4 @@ CTRL+F to search key words
             font-size: 0.8rem;
         }
     }
-        
-        /* Footer settings for mobile phones landscape */
-        @media (max-height: 500px) {
-
-            .footer-github-ul {
-                flex: 2;
-                font-size: 0.8rem;
-            }
-    }
+    
