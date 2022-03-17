@@ -10,7 +10,7 @@ CTRL+F to search key words
 
     1. Global settings
 
-    2. Background image settings
+    2. Background settings
 
     3. Columns settings
 
@@ -94,10 +94,10 @@ CTRL+F to search key words
         border-spacing: 0.35rem;
     }
 
-    li, a {
+    li, a, .footer-social-media-title {
         text-decoration: none;
         list-style: none;
-        color: rgb(200, 0, 0);
+        color: rgb(150, 0, 0);
     }
 
     a:hover {
@@ -106,28 +106,28 @@ CTRL+F to search key words
 
 /*
 -----------------------------------------------------------------
-    2. Background image settings
+    2. Background settings
 -----------------------------------------------------------------
 */
-    .navmenu-background {
-        background: url("../images/nav_bg.jpg") 0 0 / 11% 100% fixed no-repeat rgb(156, 111, 62);
+    .navmenu-background, .background {
+        z-index: -1;
+        position: fixed;
+        height: 100vh;
     }
 
-    .bio-background-img {
-        background: url("../images/bio_bg.jpg") top right / 93% 100% fixed no-repeat rgb(184, 184, 184);
+    .background {
+        width: 100vw;
     }
 
-    .career-background-img {
-        background: url("../images/career_bg.jpg") top right / 93% 100% fixed no-repeat rgb(184, 184, 184);
-    }
-
-    .festival-background-img {
-        background: url("../images/festival_bg.jpg") top right / 93% 100% fixed no-repeat rgb(184, 184, 184);
+    .background-item {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 
     .about-background {
-        background-color: aliceblue;
-        z-index: -1;
+        background-color: rgb(240, 248, 255);
+        z-index: -2;
       }
 
     .about-skew {
@@ -142,7 +142,6 @@ CTRL+F to search key words
                   rgb(55 0 0) 20%,
                   rgb(190 85 85) 70%);
         box-shadow: 0px 0px 10px 5px rgb(0 0 0 / 50%);
-        z-index: -1;
         transform: skewY(331deg);
         transform-origin: top right;
       }
@@ -165,8 +164,8 @@ CTRL+F to search key words
     }
 
     .mainsection-container {
-        flex: 9;
         display: flex;
+        flex: 9;
     }
 
 /*
@@ -252,6 +251,7 @@ CTRL+F to search key words
     }
 
     .scroll-article {
+        text-transform: uppercase;
         margin: 0 0 3% 0;
         display: flex;
         flex-direction: column;
@@ -375,13 +375,14 @@ CTRL+F to search key words
     }
 
     .iframes {
-        box-shadow: unset;
+        flex: 1;
+        margin: 1%;
     }
 
     iframe {
         width: 100%;
-        height: 275px;
-        border: none;
+        height: 300px;
+        border: 0;
     }
 
 /*
@@ -522,19 +523,6 @@ CTRL+F to search key words
 */
 @media (max-width: 1280px) {
 
-    /* Background images for SD */
-    .bio-background-img {
-        background: url("../images/bio_bg_square.jpg") 0 0 / 100% 100% fixed no-repeat rgb(100, 100, 100);
-    }
-
-    .career-background-img {
-        background: url("../images/career_bg_square.jpg") top right / 90% 100% fixed no-repeat rgb(184, 184, 184);
-    }
-
-    .festival-background-img {
-        background: url("../images/festival_bg_square.jpg") 0 0 / 100% 100% fixed no-repeat rgb(184, 184, 184);
-    }
-
     /* Navigation bar settings for SD */
     .navbutton-item {
         font-size: 60%;
@@ -569,7 +557,7 @@ CTRL+F to search key words
     8. Mobile phones settings
 -----------------------------------------------------------------
 */
-    @media (max-width: 768px) {
+    @media screen and (max-width: 768px) {
 
         /* Global settings for moble phones*/
         h1, h2, h3 {
@@ -578,19 +566,8 @@ CTRL+F to search key words
 
         /* Background image settings for mobile phones */
         .navmenu-background {
-            background: url("../images/nav_bg_phones.webp") 0 0 / 100% 10% fixed no-repeat rgb(100, 100, 100);
-        }
-
-        .bio-background-img {
-            background: url("../images/bio_bg_portrait.jpg") 0 7vh / 100% 100% fixed no-repeat rgb(100, 100, 100);
-        }
-
-        .career-background-img {
-            background: url("../images/career_bg_portrait.jpg") 0 0 / 100% 100% fixed no-repeat rgb(184, 184, 184);
-        }
-
-        .festival-background-img {
-            background: url("../images/festival_bg_portrait.jpg") 0 0 / 100% 100% fixed no-repeat rgb(184, 184, 184);
+            height: 7vh;
+            width: 100vw;
         }
 
         /* Columns settings for mobile phones */
@@ -664,25 +641,11 @@ CTRL+F to search key words
             flex: 4;
             font-size: 0.8rem;
         }
-    
     }
         
-        /* Background image landscape settings for mobile phones */
+        /* Footer settings for mobile phones landscape */
         @media (max-height: 500px) {
 
-            .bio-background-img {
-                background: url("../images/bio_bg.jpg") 0 0 / 100% 100% fixed no-repeat rgb(184, 184, 184);
-            }
-        
-            .career-background-img {
-                background: url("../images/career_bg.jpg") 0 0 / 100% 100% fixed no-repeat rgb(184, 184, 184);
-            }
-        
-            .festival-background-img {
-                background: url("../images/festival_bg.jpg") 0 0 / 100% 100% fixed no-repeat rgb(184, 184, 184);
-            }
-        
-            /* Footer settings for mobile phones */
             .footer-github-ul {
                 flex: 2;
                 font-size: 0.8rem;
