@@ -271,7 +271,7 @@
 -----------------------------------------------------------------
 */
     /* 5.1 "Scroll to read more" settings - next 4 syntaxes */
-    .scroll-container
+    .action-call-container
     {
         height: 100vh;
         display: flex;
@@ -279,7 +279,7 @@
         justify-content: flex-end;
     }
 
-    .scroll-article
+    .action-call
     {
         text-transform: uppercase;
         margin: 0 0 3% 0;
@@ -289,12 +289,12 @@
         align-self: center;
         width: fit-content;
         background-color: rgb(0 0 0 / 50%);
-        padding: 2%;
+        padding: 1%;
         border-radius: 1.5625rem;
         animation: action-call 1s infinite;        
     }
 
-    /* Makes a pulse animation for div class scroll-article */
+    /* Makes a pulse animation for div class action-call */
     @keyframes action-call
     {
         0%
@@ -313,17 +313,18 @@
         }
     }
 
-    .scroll-p
+    .action-p
     {
         color: rgb(255, 255, 255);
         text-align: center;
         text-indent: 0;
     }
 
-    .font-awesome-scroll
+    .action-indicator-item
     {
         color: rgb(255, 255, 255);
         font-size: 1.5rem;
+        margin: 5% 0;
     }
 
     .article
