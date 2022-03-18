@@ -229,7 +229,7 @@
         transition: 1.5s;
     }
 
-    /* 4.1 Makes navigation button hover when active */
+    /* 4.1 Makes navigation button hover animation when active */
     .active,
     .navbutton-item:hover
     {
@@ -243,7 +243,7 @@
         justify-content: space-evenly;
     }
 
-    /* 4.2 Makes an animation when navigation button is active */
+    /* 4.2 Makes a scale animation when navigation button is hovered or active */
     @keyframes active
     {
         0%
