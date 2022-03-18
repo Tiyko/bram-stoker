@@ -2,7 +2,7 @@
 /*
 -----------------------------------------------------------------
 
-    LEGEND: CTRL+F to search key words
+    LEGEND / INDEX: CTRL+F to search keywords
     
 
     1. Global settings
@@ -12,22 +12,24 @@
     3. Columns settings
 
     4. Navigation bar settings
-        4.1 button hover (Search key word)
-        4.2 navigation button - animation (Search key word)
+        4.1 button hover (Search keywords)
+        4.2 navigation button - animation (Search keyword)
 
     5. Main section settings
-        5.1 Scroll to read more - (Search key word)
-        5.1.1 animation (Search key word)
+        5.1 Scroll to read more - (Search keywords)
+        5.1.1 animation (Search keyword)
+        5.2 cards-item (search keyword) -Images sharing rules
 
     6. Side section settings
+        6.1 cards-item (search keywords) - Images sharing rules
 
     7. Footer settings
 
     8. Standard definition settings
-        SD (Search key word)
+        SD (Search keyword)
 
     9. Mobile phones settings
-        mobile phones (Search key word)
+        mobile phones (Search keywords)
         
 -----------------------------------------------------------------
 */
@@ -117,6 +119,7 @@
         z-index: -1;
         position: fixed;
         height: 100vh;
+        width: 10.2vw;
     }
 
     .background
@@ -415,9 +418,9 @@
         background-color: rgb(255, 255, 255);
     }
 
+    /* 5.2 cards-item - displayed 6 syntaxes below as well because they are sharing rules*/
     .cards-item
     {
-        width: 100%;
         border-radius: 0.625rem 0.625rem 0 0;
     }
 
@@ -467,9 +470,12 @@
         box-shadow: 0 0 0.625rem 0.3125rem rgb(0 0 0 / 50%);
     }
 
+    /* 6.1 cards-item - displayed 6 syntaxes upper as well because they are sharing rules*/
+    .cards-item,
     .side-cards-item
     {
         width: 100%;
+        height: auto;
     }
 
     form
@@ -555,7 +561,7 @@
 
     .footer-github-ul
     {
-        flex: 1.01;
+        flex: 1;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
@@ -768,6 +774,16 @@
         .footer-github-ul
         {
             flex: 4;
+            font-size: 0.8rem;
+        }
+    }
+
+        /* Footer settings for mobile phones landscape */
+        @media (max-height: 500px)
+    {
+        .footer-github-ul
+        {
+            flex: 2;
             font-size: 0.8rem;
         }
     }
