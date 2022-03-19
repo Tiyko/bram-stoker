@@ -335,12 +335,6 @@
         flex: 8;
     }
 
-    .sidesection-container
-    {
-        flex: 2;
-        margin: 10vh 2% 0 0;
-    }
-
     .sections
     {
         box-shadow: 0 0 0.625rem 0.3125rem rgb(0 0 0 / 50%);
@@ -450,8 +444,22 @@
 >   6. Side section settings
 -----------------------------------------------------------------
 */
+    .sidesection-container
+    {
+        flex: 2;
+        margin: 0 2% 0 0;
+    }
+
+    .push-next-side-section
+    {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+    }
+
     .side-sections
     {
+        width: 100%;
         background-color: rgb(255, 255, 255);
         margin: 0 0 5% 0;
         box-shadow: 0 0 0.625rem 0.3125rem rgb(0 0 0 / 50%);
@@ -759,6 +767,13 @@
             padding: 0;
             border: 0;
             margin: 20vh 0 0 0;
+        }
+
+        .push-next-side-section
+        {
+            min-height: 0;
+            display: unset;
+            align-items: unset;
         }
 
         .side-sections-paragraphs
