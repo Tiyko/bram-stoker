@@ -61,7 +61,7 @@
         padding: 1% 0 0 0;
         color: rgb(0, 0, 0);
         text-indent: 10%;
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
 
     h3 {
@@ -91,8 +91,7 @@
     }
 
     li,
-    a,
-    .footer-social-media-title {
+    a {
         text-decoration: none;
         list-style: none;
         color: rgb(150, 0, 0);
@@ -142,6 +141,15 @@
         box-shadow: 0 0 0.625rem 0.3125rem rgb(0 0 0 / 50%);
         transform: skewY(331deg);
         transform-origin: top right;
+        animation: about-skew 3s;
+    }
+
+    /* Makes a scale animation in the About page*/
+    @keyframes about-skew {
+        0% {
+            transform: scale(0.01);
+
+        }
     }
 
 /*-----------------------------------------------------------------
@@ -191,12 +199,10 @@
         font-size: 0.9rem;
         color: rgb(255, 255, 255);
         text-transform: uppercase;
-        text-shadow: rgb(0 0 0) -0.0625rem -0.0625rem 1.25rem,
-                     rgb(0 0 0) -0.125rem -0.125rem 0.125rem,
-                     rgb(0 0 0) -0.1875rem -0.1875rem 0.125rem,
-                     rgb(0 0 0) 0.0625rem 0.0625rem 1.25rem,
-                     rgb(0 0 0) 0.125rem 0.125rem 0.125rem,
-                     rgb(0 0 0) 0.1875rem 0.1875rem 0.125rem;
+        text-shadow: rgb(0 0 0) 0rem -0.0888rem 0.0625rem,
+                     rgb(0 0 0) 0rem 0.0888rem 0.0625rem,
+                     rgb(0 0 0) -0.0888rem 0 0.0625rem,
+                     rgb(0 0 0) 0.0888rem 0 0.0625rem;
         display: flex;
         justify-content: center;
         transition: 1.5s;
@@ -207,9 +213,9 @@
     .navbutton-item:hover {
         border: outset;
         padding: 2%;
-        box-shadow: inset rgb(132 132 132) 0.1875rem 0.1875rem 1.25rem 1.25rem,
+        box-shadow: inset rgb(70, 70, 70) 0.1875rem 0.1875rem 1.25rem 1.25rem,
                           rgb(0 0 0) -0.1875rem -0.1875rem 0.3125rem 0rem,
-                    inset rgb(192 192 192) -0.1875rem -0.1875rem 1.25rem 1.25rem,
+                    inset rgb(70, 70, 70) -0.1875rem -0.1875rem 1.25rem 1.25rem,
                           rgb(0 0 0) 0.1875rem 0.1875rem 0.3125rem 0rem;
         animation: active 0.5s;
         justify-content: space-evenly;
@@ -417,6 +423,10 @@
         height: auto;
     }
 
+    .story {
+        scroll-margin-top: 5vh;
+    }
+
     form {
         background-image: linear-gradient(158deg,
                         rgb(231, 100, 37) 0%,
@@ -508,8 +518,10 @@
         text-align: center;
         font-size: 0.8rem;
         text-indent: 0;
-        text-shadow: rgb(0 0 0) 0rem -0.1875rem 0.1875rem,
-                     rgb(0 0 0) 0rem 0.1875rem 0.1875rem;
+        text-shadow: rgb(0 0 0) 0rem -0.05rem 0.0325rem,
+                     rgb(0 0 0) 0rem 0.05rem 0.0325rem,
+                     rgb(0 0 0) -0.05rem 0 0.0325rem,
+                     rgb(0 0 0) 0.05rem 0 0.0325rem;
     }
 
     .footer-github-icon {
@@ -529,8 +541,12 @@
         width: 100%;
         padding: 0;
         text-indent: 0;
-        font-size: 1.4rem;
+        color: rgb(255, 0, 0);
         text-align: center;
+        text-shadow: rgb(0 0 0) 0rem -0.0938rem 0.0313rem,
+                     rgb(0 0 0) 0rem 0.05rem 0.0156rem,
+                     rgb(0 0 0) -0.05rem 0 0.0156rem,
+                     rgb(0 0 0) 0.05rem 0 0.0156rem;
     }
 
     .social-media {
@@ -540,9 +556,6 @@
         justify-content: space-evenly;
     }
 
-    .media-icons {
-        font-size: 2rem;
-    }
 
 /*-----------------------------------------------------------------
 >   8. Standard definition settings
@@ -591,8 +604,7 @@
 
         /* Global settings for moble phones*/
         h1, h2, h3,
-        .footer-social-media-title,
-        .media-icons {
+        .footer-social-media-title {
             font-size: 1.2rem;
         }
 
@@ -661,9 +673,7 @@
 
         /* Side-section settings for mobile phones */
         .sidesection-container {
-            padding: 0;
-            border: 0;
-            margin: 20vh 0 0 0;
+            margin: 0;
         }
 
         .push-next-side-section {
@@ -689,8 +699,8 @@
         }
     }
 
-        /* Footer settings for mobile phones landscape */
-        @media (max-height: 500px) {
+    /* Footer settings for mobile phones landscape */
+    @media (max-height: 500px) {
         .footer {
             height: 25vh;
         }
