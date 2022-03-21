@@ -290,7 +290,7 @@
         background-color: rgb(0 0 0 / 50%);
         padding: 1%;
         border-radius: 1.5625rem;
-        animation: action-call 1s infinite;        
+        animation: action-call 2s infinite;    
     }
 
     /* Makes a pulse animation for div class action-call */
@@ -303,7 +303,7 @@
 
         50%
         {
-            transform: scale(1.1, 1.1);
+            transform: scale(1.2, 1.2);
         }
 
         100%
