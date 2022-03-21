@@ -24,8 +24,6 @@ Abraham Stoker was an Irish novel writer and a theatre manager, he was the creat
 
 ## **Planning**
 
-***
-
 * The website served a very good purpose for me to learn html/css:
   * I planned, to overcomplicate things and learn how to simplify and/or debug them.
   * I planned, to introduce a greater amount of content.
@@ -41,8 +39,6 @@ Abraham Stoker was an Irish novel writer and a theatre manager, he was the creat
 ***
 
 ## **UX Design**
-
-***
 
 ### **Target Audience**
 
@@ -77,8 +73,6 @@ Abraham Stoker was an Irish novel writer and a theatre manager, he was the creat
 ***
 
 ## **UI Design**
-
-***
 
 ### **Wireframes**
 
@@ -125,8 +119,8 @@ I also learned how to make the aside container display alone on the screen on th
 
 #### ***Right side sections***
 
-* On all pages, a container related to the current page container can be found.
-* Its purpose is to compliment every page's theme.
+* On all pages, on the right side, a section related to the current page's content can be found.
+* Its purpose is to complement every page's theme.
 * It has a title, text content, and pictures.
 * Shadows around the edges give it a 3D appearance and make it stand out.
 
@@ -145,6 +139,7 @@ I also learned how to make the aside container display alone on the screen on th
 ***
 
 * This is the index page, also called the landing page or the home page.
+* The page has useful links marked in orange leading to Wikipedia, in case the user wants a more in-depth read.
 * Here the user becomes comfortable about the general meaning of the website.
 * The large striking background image of a vampire nearby Bran Castle is stating that the website might be about Dracula.
 * The side section on the right is meant to complement the background image and assure the user that the website is about Bram Stoker by presenting a short introduction about his life and most notable work, Dracula.
@@ -153,3 +148,22 @@ I also learned how to make the aside container display alone on the screen on th
 * The large eye-catchy background is meant to also catch the user's attention and make them comfortable to stay and explore the website even if they might not be fans.
 * As soon as the user answers the call to action, at the bottom of the screen the user is presented with a concise introduction about Bram Stoker, along with pictures to keep the user entertained.
 ![Landing Page](docs/screenshots/landing_page_2.webp)
+
+### **Career page**
+
+***
+
+* The career page is a summary of Bram Stoker's early career to later in life when he became famous for the immense success of Dracula.
+* Theatre was Bram Stoker's life and to emphasize this, the background image tries to make the user immediately understand that is referred to the Theatre.
+* The section on the right with the title "Theatre life" complements and seals that this page is referred to a career in Theatre before the user has read any content.
+![Career Page](docs/screenshots/career_page.webp)
+
+#### ***Dracula story page***
+
+* At the bottom of the career page, a short introductory section can be found with a link leading to a summary of the book in case the user does not want to read the book, but a summary would suffice.
+![Dracula story](docs/screenshots/career_story.webp)
+
+* This page is complementary to the career page and has a summary of the book in just 9 total sections.
+* In addition to Wikipedia links, here the section on right side leads to Wikisource for a full read of Dracula book, in case the user wishes to do so.
+* The background image is reverted to the one from the landing page to fit into the Dracula story theme.
+![Dracula story](docs/screenshots/dracula_story.webp)
