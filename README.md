@@ -158,12 +158,66 @@ I also learned how to make the aside container display alone on the screen on th
 * The section on the right with the title "Theatre life" complements and seals that this page is referred to a career in Theatre before the user has read any content.
 ![Career Page](docs/screenshots/career_page.webp)
 
-#### ***Dracula story page***
+#### ***Dracula's story page***
 
 * At the bottom of the career page, a short introductory section can be found with a link leading to a summary of the book in case the user does not want to read the book, but a summary would suffice.
 ![Dracula story](docs/screenshots/career_story.webp)
 
 * This page is complementary to the career page and has a summary of the book in just 9 total sections.
-* In addition to Wikipedia links, here the section on right side leads to Wikisource for a full read of Dracula book, in case the user wishes to do so.
-* The background image is reverted to the one from the landing page to fit into the Dracula story theme.
+* In addition to Wikipedia links, here the section on right side, there is a section that leads to Wikisource for a full read of Dracula book, in case the user wishes to do so.
+* The background image is reverted to the one from the landing page to make the story fit better into the Dracula story theme.
 ![Dracula story](docs/screenshots/dracula_story.webp)
+
+### **Festival page**
+
+***
+
+* This page aims to promote the festival with striking pictures, videos, and warm quotations from the past years recordings and articles to make the user comfortable and decide to give the festival a try.
+* The striking background picture wants to instantly depict a festive feeling.
+* The section on the right means to complement the background image and inform the user.
+![Festival Page](docs/screenshots/festival_page.webp)
+![Festival Pictures](docs/screenshots/festival_page_pictures.webp)
+* The videos on this page have a facade to speed up the page's loading time and also the user has the option to load the video on demand if they wish to do so and save resources this way.
+![Festival Page Videos](docs/screenshots/festival_page_videos.webp)
+
+### **About page**
+
+***
+
+* This page offers a means to contact festival organizers via the form on the right-side section.
+* The form is made to be simple and intuitive, with a section for username, user contact information, a text area option for feedback, and an option to subscribe to a newsletter system and receive the latest news about future events from the Dublin City Council Events Unit.
+* A big stylish button to the bottom of the form inverting colors on hovering, so the user can submit the form after is done.
+* Right under the form, a small section presents details in case the user wants to use their own email service to contact the events unit.
+* The background represents pretty much my present skills in animation in CSS.
+* The skewed element's animation is to start expanding from the top-right corner in diagonal.
+* To stick to the theme I have chosen a pinkish gradient color and on top a skewed element with a red gradient background.
+![About Page](docs/screenshots/about_page.webp)
+* Answering the call to action can read about the website, website author, and its purpose.
+* There is a section for credits and research as this website does not have any real affiliation with Dublin City Council and is created for education and learning purposes only.
+![About Page Credits and Research](docs/screenshots/about_page_credits_and_research.webp)
+
+#### ***About page form thanks feedback***
+
+* After the form is completed and the button is pressed, the form is replaced with a small snippet thanking the user.
+![Form feedback](docs/screenshots/about_page_form_feedback.jpg)
+
+
+### **Footer**
+
+* At the bottom of every page, the Footer can be found.
+* The title has a red color with a black outline made using text-shadow with a crossing border under it.
+* Links to all social media websites related to the festival can be found here with imported icons from css.gg.
+* On the left side of it there is a small snippet to follow the author of the website on GitHub.
+* It has a stylish gradient background, starting dark red color to a pink whitish color at the end of it.
+![Footer Snippet](docs/screenshots/footer.jpg)
+
+***
+
+## **Testing and Debugging**
+
+* During development, I constantly tried to think a couple of steps ahead and tested the website on multiple web browsers to clean it of errors. Please click on the following md link for the debugging and performance document [TESTING AND DEBUGGING](TESTING_AND_DEBUGGING.md)
+
+***
+
+## **Credits and Research**
+
