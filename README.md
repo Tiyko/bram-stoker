@@ -77,6 +77,7 @@ Abraham Stoker was an Irish novel writer and a theatre manager, he was the creat
 ### **Wireframes**
 
 To follow a pattern and make my life easier before I engaged in creating the website, first I drew wireframes using [draw.io](https://app.diagrams.net/).
+I made two sets of wireframes, a top part, and a bottom part because if I were to present these sketches to someone else, they would not know where most of the content resides.
 
 * Desktop wireframes:
   * [Desktop diagram top part](docs/wireframes/initial-desktop-top.png)
@@ -96,6 +97,13 @@ I also learned how to make the aside container display alone on the screen on th
 ### **Common Features**
 
 ***
+
+#### ***Colors***
+
+* For the colors used on the website, I decided to use variations of dark-red to pink-white on the background of snippets. Black for general content text with orange for links. Pure white for snippets and general content text background.
+* As I learned the use CSS better, I decided that I can combine the red color variations in a gradient nice look and feel.
+* In the earlier versions of the website I tried to use pure white text over a pure black or reduced opacity background but the look and feel were not satisfying.
+* I used the [a11y](https://color.a11y.com/) color validator to make sure the contrast is not out of balance.
 
 #### ***Navigation bar***
 
@@ -201,7 +209,6 @@ I also learned how to make the aside container display alone on the screen on th
 * After the form is completed and the button is pressed, the form is replaced with a small snippet thanking the user.
 ![Form feedback](docs/screenshots/about_page_form_feedback.jpg)
 
-
 ### **Footer**
 
 * At the bottom of every page, the Footer can be found.
@@ -219,5 +226,17 @@ I also learned how to make the aside container display alone on the screen on th
 
 ***
 
-## **Credits and Research**
+## **Deployment**
 
+To deploy the website on GitHub pages, I used the following procedure:
+
+1. From inside the website's repository I clicked the last tab, "Settings".
+1. In the "Settings" tab to the left-hand side a menu with the title "General" can be found. Here in the second group "Code and automation" I clicked the last option, "Pages".
+1. Inside "GitHub Pages" and right under it there is a section with the title "Source" with 3 options:
+    * Select Branch: main
+    * Select Folder: /(root)
+    * Click save: your website will be deployed.
+
+***
+
+## **Credits and Research**
