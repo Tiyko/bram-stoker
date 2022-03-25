@@ -5,7 +5,11 @@
 
 Abraham Stoker was an Irish novel writer and a theatre manager, he was the creator of the fantasy novel Dracula as you probably already know or read it on my website (link below). The website aims to educate and offer an introduction into the life of Bram Stoker and his masterpiece creation novel, Dracula. The website also serves as a promotion to Bram Stoker Festival which is celebrated every year in Dublin, Ireland on Halloween. The festival is largely organized by Dublin City Council.
 
+***
+
 **The website is live on Github Pages [Linked Here](https://tiyko.github.io/bram-stoker/index.html)**
+
+***
 
 ![Am I responsive screenshot](docs/screenshots/screenshot_am_i_responsive.jpg)
 
@@ -14,9 +18,11 @@ Abraham Stoker was an Irish novel writer and a theatre manager, he was the creat
 1. [**Website Intro**](#website-intro)
 1. [**Planning**](#planning)
 1. [**UX Design**](#ux-design)
-    * [***Target Audience***](#target-audience)
-    * [**User Accessibility**](#user-accessibility)
-    * [**Website Accomplishments**](#website-accomplishments)
+    * [**The Strategy and the Scope Plane**](#the-strategy-and-the-scope-plane**)
+      * [***Target Audience***](#target-audience)
+    * [**The Structure Plane**](#the-structure-plane)
+      * [***User Accessibility***](#user-accessibility)
+      * [***Website Accomplishments***](#website-accomplishments)
 1. [**UI Design**](#ui-design)
     * [**Wireframes**](#wireframes)
     * [**Common Features**](#common-features)
@@ -42,10 +48,13 @@ Abraham Stoker was an Irish novel writer and a theatre manager, he was the creat
 
 ***
 
-## **Planning**
+## **Personal Set Goals**
 
-* The website served a very good purpose for me to learn html/css:
-  * I planned, to overcomplicate things and learn how to simplify and/or debug them.
+***Before starting the project I have set a number of set goals with the purpose of learning.***
+
+* The website was built entirely by myself, I didn't use the love running as a template, and only followed instructions from the course walkthrough. Doing it this way, served as a very good practice for me to learn html/css:
+
+  * I planned, to overcomplicate things and learn how to simplify and debug them.
   * I planned, to introduce a greater amount of content.
   * I planned, to make a greater amount of content accessible.
   * I planned, a side navigation bar for larger tablets and desktop size screens.
@@ -56,11 +65,20 @@ Abraham Stoker was an Irish novel writer and a theatre manager, he was the creat
   * I planned, the Festival page to make the user feel well informed and comfortable about the event.
   * I planned, the Contact page to be about the site author, website purpose, and offer credits to the picture authors.
 
-***
-
 ## **UX Design**
 
-### **Target Audience**
+*The UXD was made taking into consideration "The Five plans" presented in the course.*
+
+### **The Strategy and the Scope Plane**
+
+* Taking culture into consideration I decided to use an Irish relevant subject:
+  * Bram Stoker was one of the most renowned Irish novelists and I think he does not get enough appreciation.
+    * An undersaturated product has better chances of selling.
+  * Also taking into consideration culture since I am Romanian I grew up with stories about Dracula who Bram Stoker has made popular worldwide with inspiration from Romanian culture.
+    * This had a good impact on me as a beginner for research purposes because the subject matters to me.
+  * Promoting a local culture product will have a greater impact and thus increase chances of selling the product.
+
+#### ***Target Audience***
 
 * Users that are fans of Bram Stoker's writings.
 * Users that are fans of fantasy novels.
@@ -70,7 +88,9 @@ Abraham Stoker was an Irish novel writer and a theatre manager, he was the creat
 * Users that plan to take a trip to Dublin on Halloween or are tourists.
 * Users that maybe are not accustomed to who created Dracula.
 
-### **User Accessibility**
+### **The Structure Plane**
+
+#### ***User Accessibility***
 
 * As a user, I want the design to be eye-catchy.
 * As a user, I want the information to be easy accessed.
@@ -81,7 +101,7 @@ Abraham Stoker was an Irish novel writer and a theatre manager, he was the creat
 * As an event organizer, I want the user to be well informed.
 * As an event organizer, I want to promote our social media channels.
 
-### **Website Accomplishments**
+#### ***Website Accomplishments***
 
 * The website provides, a summary of Bram Stoker's biography and career.
 * The website provides, useful links about Bram Stoker's life and most notable works.
@@ -90,9 +110,9 @@ Abraham Stoker was an Irish novel writer and a theatre manager, he was the creat
 * The website provides, an all-time present navigation bar to make navigation of content easy to find.
 * The website provides, a newsletter system for users to subscribe and receive the latest news.
 
-***
-
 ## **UI Design**
+
+***Taking into consideration the "Five Planes" I have used the "Skeleton Plane" and the "Surface Plane" to make the UI design.***
 
 ### **Wireframes**
 
@@ -167,8 +187,6 @@ I also learned how to make the aside container display alone on the screen on th
 ***
 
 #### **Biography - Landing Page**
-
-***
 
 * This is the index page, also called the landing page or the home page.
 * The page has useful links marked in orange leading to Wikipedia, in case the user wants a more in-depth read.
@@ -245,13 +263,9 @@ I also learned how to make the aside container display alone on the screen on th
 * It has a stylish gradient background, starting dark red color to a pink whitish color at the end of it.
 ![Footer Snippet](docs/screenshots/footer.jpg)
 
-***
-
 ## **Testing and Debugging**
 
 * During development, I constantly tried to think a couple of steps ahead and tested the website on multiple web browsers to clean it up of errors. Please click on the following .md link for the debugging and performance document [TESTING AND DEBUGGING](TESTING_AND_DEBUGGING.md).
-
-***
 
 ## **Deployment**
 
@@ -264,13 +278,9 @@ To deploy the website on GitHub pages, I used the following procedure:
     * Select Folder: /(root)
     * Click save: your website will be deployed.
 
-***
-
 ## **Credits and Research**
 
 ### **Special Credit**
-
-***
 
 During the developing process, I engaged in the slack community channel project-portfolio-1 with a few questions and received valued feedback:
 
@@ -282,13 +292,9 @@ During the developing process, I engaged in the slack community channel project-
 
 ### **General reference:**
 
-***
-
 Besides the course's material I also used W3schools, MDN web docs, Stack Overflow, and youtube ([Youtube channel WebDevSimplified](https://www.youtube.com/c/WebDevSimplified), [Youtube channel Kevin Powell](https://www.youtube.com/kepowob)) for general or a more in-depth reference.
 
 ### **Content and Research**
-
-***
 
 The content used came from the public domain, and news website articles from where I took and adapted key sections and phrases to fit into my website's theme and deliver a more compact summary:
 

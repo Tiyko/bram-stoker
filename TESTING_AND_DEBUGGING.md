@@ -69,7 +69,7 @@ As I better learned practice of HTML and CSS the page went through many changes 
 
 * Position fixed did that very well. This cascaded in another problem and make the menu come out of the parent container that was nested in so i had to give it more precise rules.
 * Although this solution was perfect using Chrome browser and Brave browser, while checking on Firefox browser the picture on the background would spill out of the parent container while navigating the About page on both desktops and mobile phones.
-  * Solution was simple. I have used a fixed viewport width on the parent container and after testing it out it behaved very well and was responsive on all browsers.
+  * Solution was simple. I have used a fixed viewport width on the parent container and after testing it out it behaved very well and was responsive on all browsers. Overflow:hidden didn't work.
 
 ***
 
@@ -123,8 +123,6 @@ As I better learned practice of HTML and CSS the page went through many changes 
 
 *I could as well include over here that after the testing and debugging phase was done I went into all my files and tried to dry up my code, especially the CSS file and found about 3 syntaxes that have been simplified and also in the HTML files I removed the div wrapping all the content of the pages and gave its values to the body element.*
 
-***
-
 ## **Post developement testing**
 
 ### **HTML Validation**
@@ -143,8 +141,6 @@ As I better learned practice of HTML and CSS the page went through many changes 
 * After I ran my pages through it I discovered that the links of the content were having contrast issues.
 * I went into my CSS file adjusted the code to a darker shade and the issue was fixed.
 
-***
-
 ## **Lighthouse Score**
 
 * During development, I used the Lighthouse now and then to make sure my website performance score stays as high up as possible but there were a few errors I had to fix:
@@ -161,8 +157,6 @@ As I better learned practice of HTML and CSS the page went through many changes 
 ![Lighthouse performance snippet](docs/screenshots/lighthouse2.jpg)
 
 *These scores came up most often but because the website has to contact other third party websites like linked fonts and icons, there seemed to be some variation if I would run the same test many times in a row. I used incognito mode on Brave and Chrome to run the Lighthouse tests. However, Opera browser Lighthouse tests showed results most consistent and stable.*
-
-***
 
 ## **Accessability**
 
