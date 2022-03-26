@@ -239,6 +239,11 @@
 /*-----------------------------------------------------------------
 >   5. Main section settings
 -----------------------------------------------------------------*/
+
+    .small-device-intro {
+        display: none;
+    }
+
     /* 5.1 "Scroll to read more" settings - next 4 syntaxes */
     .action-call-container {
         height: 100vh;
@@ -659,6 +664,20 @@
         }
 
         /* Main section settings for mobile phones */
+
+        .small-device-intro {
+            display: flex;
+            justify-content: space-around;
+            background-color: rgba(0, 0, 0, 0.5);
+            margin: 7vh 0 0 0;
+        }
+
+        .small-device-intro-text {
+            color: rgb(255, 255, 255);
+            font-size: 1.2rem;
+            font-family: 'Courgette', sans-serif;
+        }
+
         .article {
             width: 100vw;
             margin: 0;
