@@ -94,8 +94,8 @@ As I better learned practice of HTML and CSS the page went through many changes 
 
 * After running a few performance tests, The lighthouse was pointing out errors in the console and an increased load time for up to 5 seconds on the festival page.
 * I went to read the error's documentation and it was pointing out that a facade in front of the videos could fix the issue.
-* Not knowing what a facade is, I went on a google search and found an example of a facade on a Shopify forum.
-* I took the "srcdoc" and formatted it to understand better how to use the facade's code. After doing so I adapted it to fit my needs.
+* Not knowing what a facade is, I went on a google search and found an example of a facade on a [Shopify forum](https://community.shopify.com/c/technical-q-a/how-to-implement-the-facade-method-for-youtube-embedded-videos/td-p/1287962).
+* I took the "srcdoc" code and formatted it to understand better how to use the facade's code. After doing so I adapted it to fit my needs.
 * Went back to the lighthouse and ran a few tests and just like that the errors were gone.
 
 ***
