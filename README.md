@@ -316,7 +316,7 @@ The content used came from the public domain, and news website articles from whe
     * [Bram Stoker Festival Article by RTE](https://www.rte.ie/culture/2016/1026/826978-bram-stoker-festival/)
     * [Bram Stoker Festival Article by Irish Times](https://www.irishtimes.com/culture/bram-stoker-festival-everything-you-need-to-know-1.3666538)
     * [Wikipedia's Article about Macnas artist band](https://en.wikipedia.org/wiki/Macnas)
-    * [Shopify forum Facade SRCDOC Code](https://community.shopify.com/c/technical-q-a/how-to-implement-the-facade-method-for-youtube-embedded-videos/td-p/1287962)
+    * [Shopify community forum Facade SRCDOC Code writen by Ryan-Mathias](https://community.shopify.com/c/technical-q-a/how-to-implement-the-facade-method-for-youtube-embedded-videos/td-p/1287962)
 * ***About page:***
   * The content of this page was written by myself.
 
